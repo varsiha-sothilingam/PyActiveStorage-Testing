@@ -1,0 +1,309 @@
+Run 1:
+Dataset loaded from https with Pyfive: https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+[[[0.0]]]
+       93.58 real         4.70 user         2.22 sys
+           538935296  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               35628  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                1399  messages sent
+              133857  messages received
+                   0  signals received
+                 852  voluntary context switches
+               88662  involuntary context switches
+         24032191095  instructions retired
+         12719930455  cycles elapsed
+           386975904  peak memory footprint
+----------------------
+Run 2:
+Dataset loaded from https with Pyfive: https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+[[[0.0]]]
+       85.06 real         3.87 user         1.91 sys
+           574373888  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               37735  page reclaims
+                  26  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                1399  messages sent
+              137361  messages received
+                   0  signals received
+                1267  voluntary context switches
+               92830  involuntary context switches
+         23929047800  instructions retired
+         12127889120  cycles elapsed
+           404392096  peak memory footprint
+----------------------
+Run 3:
+Dataset loaded from https with Pyfive: https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+Reducing chunk of object <class 'str'>
+[[[0.0]]]
+       79.77 real         3.70 user         1.90 sys
+           537657344  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               46457  page reclaims
+                  29  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                1399  messages sent
+              144149  messages received
+                   0  signals received
+                1797  voluntary context switches
+              148680  involuntary context switches
+         25003014146  instructions retired
+         13615958682  cycles elapsed
+           450300112  peak memory footprint
+----------------------

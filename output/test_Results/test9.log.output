@@ -1,0 +1,116 @@
+Run 1:
+Dataset loaded from https with Pyfive: https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+[[[0.666102945804596]]]
+      152.00 real         4.02 user         1.87 sys
+           162971648  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12208  page reclaims
+                 334  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 239  messages sent
+               42484  messages received
+                   0  signals received
+                1380  voluntary context switches
+               43009  involuntary context switches
+         11283323703  instructions retired
+          7457796431  cycles elapsed
+            83002304  peak memory footprint
+
+
+Run 2:
+Dataset loaded from https with Pyfive: https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+[[[0.666102945804596]]]
+      137.37 real         3.49 user         1.71 sys
+           176406528  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12241  page reclaims
+                1120  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 239  messages sent
+               42733  messages received
+                   0  signals received
+                 831  voluntary context switches
+               42585  involuntary context switches
+         11286569715  instructions retired
+          6431823673  cycles elapsed
+            84444072  peak memory footprint
+
+Run 3:
+(activestorage) dh935740@reading.ac.uk@FXC6WJNY41 tests_Varsiha % /usr/bin/time -l python scripts/run_new_tenancy.py 
+Dataset loaded from https with Pyfive: https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+[[[0.666102945804596]]]
+      138.26 real         3.84 user         1.76 sys
+           169246720  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12895  page reclaims
+                   9  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 239  messages sent
+               43444  messages received
+                   0  signals received
+                  37  voluntary context switches
+               46928  involuntary context switches
+         11287919738  instructions retired
+          7428403121  cycles elapsed
+            86639456  peak memory footprint
+
+Run 4
+Dataset loaded from https with Pyfive: https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+[[[0.666102945804596]]]
+      123.95 real         3.18 user         1.54 sys
+           206815232  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15205  page reclaims
+                   5  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 239  messages sent
+               41323  messages received
+                   0  signals received
+                 836  voluntary context switches
+               44187  involuntary context switches
+         11092286398  instructions retired
+          6476358446  cycles elapsed
+            85279704  peak memory footprint
+
+Run 5:
+Dataset loaded from https with Pyfive: https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+[[[0.666102945804596]]]
+      149.23 real         3.44 user         1.64 sys
+           168558592  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12873  page reclaims
+                  11  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 239  messages sent
+               43009  messages received
+                   0  signals received
+                 335  voluntary context switches
+               43481  involuntary context switches
+         11180409098  instructions retired
+          6595681912  cycles elapsed
+            86770552  peak memory footprint

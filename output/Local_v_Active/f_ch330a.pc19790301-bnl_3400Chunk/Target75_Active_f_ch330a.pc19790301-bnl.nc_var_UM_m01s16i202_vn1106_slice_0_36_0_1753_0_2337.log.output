@@ -1,0 +1,595 @@
+Run 1:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.14,3.7)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Confirm slice is (slice(0, 36, None), slice(0, 1753, None), slice(0, 2337, None))
+Result is [[[4708.3046875]]]
+       15.45 real         4.53 user         1.35 sys
+           376520704  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               53930  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                8855  messages sent
+               72287  messages received
+                   0  signals received
+                3646  voluntary context switches
+              197770  involuntary context switches
+         63979952518  instructions retired
+         22744836821  cycles elapsed
+           213435400  peak memory footprint
+----------------------
+Run 2:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.15,4.0)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Reductionist error: HTTP 503: -
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/models.py", line 965, in json
+    return complexjson.loads(self.content.decode(encoding), **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 259, in decode_and_raise_error
+    error = json.dumps(response.json())
+                       ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/models.py", line 973, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 85, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 38, in test_s3_file
+    result = active[sample_slice]
+             ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 336, in __getitem__
+    return self._get_selection(index)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 467, in _get_selection
+    return self._from_storage(ds, indexer, array._chunks, out_shape, dtype,
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              compressor, filters, drop_axes, self._axis)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 570, in _from_storage
+    result, count, out_selection = future.result()
+                                   ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 711, in _process_chunk
+    tmp, count = reductionist.reduce_chunk(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<11 lines>...
+        axis,
+        ^^^^^
+        operation=self._method)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 99, in reduce_chunk
+    decode_and_raise_error(response)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 262, in decode_and_raise_error
+    raise ReductionistError(response.status_code, "-") from exc
+activestorage.reductionist.ReductionistError: Reductionist error: HTTP 503: -
+       16.19 real         7.09 user         1.75 sys
+           798130176  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               71674  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               12271  messages sent
+               84689  messages received
+                   0  signals received
+                5242  voluntary context switches
+              231547  involuntary context switches
+         99300045653  instructions retired
+         33167410549  cycles elapsed
+           614664712  peak memory footprint
+----------------------
+Run 3:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.15,3.8)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Confirm slice is (slice(0, 36, None), slice(0, 1753, None), slice(0, 2337, None))
+Result is [[[4708.3046875]]]
+       15.33 real         4.24 user         1.33 sys
+           363511808  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               56173  page reclaims
+                  42  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                8575  messages sent
+               71402  messages received
+                   0  signals received
+                4346  voluntary context switches
+              188364  involuntary context switches
+         61121836829  instructions retired
+         21606870406  cycles elapsed
+           211960768  peak memory footprint
+----------------------
+Run 4:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.15,4.2)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Reductionist error: HTTP 503: -
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/models.py", line 965, in json
+    return complexjson.loads(self.content.decode(encoding), **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 259, in decode_and_raise_error
+    error = json.dumps(response.json())
+                       ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/models.py", line 973, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 85, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 38, in test_s3_file
+    result = active[sample_slice]
+             ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 336, in __getitem__
+    return self._get_selection(index)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 467, in _get_selection
+    return self._from_storage(ds, indexer, array._chunks, out_shape, dtype,
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              compressor, filters, drop_axes, self._axis)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 570, in _from_storage
+    result, count, out_selection = future.result()
+                                   ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 711, in _process_chunk
+    tmp, count = reductionist.reduce_chunk(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<11 lines>...
+        axis,
+        ^^^^^
+        operation=self._method)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 99, in reduce_chunk
+    decode_and_raise_error(response)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 262, in decode_and_raise_error
+    raise ReductionistError(response.status_code, "-") from exc
+activestorage.reductionist.ReductionistError: Reductionist error: HTTP 503: -
+       16.49 real         6.86 user         1.72 sys
+           730054656  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               65984  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               12023  messages sent
+               85208  messages received
+                   0  signals received
+                5188  voluntary context switches
+              220379  involuntary context switches
+         96756835079  instructions retired
+         32045259819  cycles elapsed
+           536234408  peak memory footprint
+----------------------
+Run 5:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.15,3.7)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Confirm slice is (slice(0, 36, None), slice(0, 1753, None), slice(0, 2337, None))
+Result is [[[4708.3046875]]]
+       15.02 real         4.52 user         1.34 sys
+           342409216  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               52357  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                8887  messages sent
+               73002  messages received
+                   0  signals received
+                3707  voluntary context switches
+              192933  involuntary context switches
+         64469512450  instructions retired
+         22883020962  cycles elapsed
+           222168072  peak memory footprint
+----------------------
+Run 6:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.15,3.8)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Reductionist error: HTTP 503: -
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/models.py", line 965, in json
+    return complexjson.loads(self.content.decode(encoding), **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 259, in decode_and_raise_error
+    error = json.dumps(response.json())
+                       ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/models.py", line 973, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 85, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 38, in test_s3_file
+    result = active[sample_slice]
+             ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 336, in __getitem__
+    return self._get_selection(index)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 467, in _get_selection
+    return self._from_storage(ds, indexer, array._chunks, out_shape, dtype,
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              compressor, filters, drop_axes, self._axis)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 570, in _from_storage
+    result, count, out_selection = future.result()
+                                   ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 711, in _process_chunk
+    tmp, count = reductionist.reduce_chunk(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<11 lines>...
+        axis,
+        ^^^^^
+        operation=self._method)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 99, in reduce_chunk
+    decode_and_raise_error(response)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 262, in decode_and_raise_error
+    raise ReductionistError(response.status_code, "-") from exc
+activestorage.reductionist.ReductionistError: Reductionist error: HTTP 503: -
+       15.95 real         8.06 user         1.84 sys
+           863010816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               81293  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               13695  messages sent
+               89855  messages received
+                   0  signals received
+                6101  voluntary context switches
+              236172  involuntary context switches
+        114365469703  instructions retired
+         37241962781  cycles elapsed
+           685558280  peak memory footprint
+----------------------
+Run 7:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.15,3.7)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Confirm slice is (slice(0, 36, None), slice(0, 1753, None), slice(0, 2337, None))
+Result is [[[4708.3046875]]]
+       15.27 real         4.28 user         1.32 sys
+           352862208  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               53986  page reclaims
+                  42  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                8591  messages sent
+               73320  messages received
+                   0  signals received
+                3791  voluntary context switches
+              194001  involuntary context switches
+         61466390938  instructions retired
+         21935861843  cycles elapsed
+           215253952  peak memory footprint
+----------------------
+Run 8:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.15,4.0)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Reductionist error: HTTP 503: -
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/models.py", line 965, in json
+    return complexjson.loads(self.content.decode(encoding), **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 259, in decode_and_raise_error
+    error = json.dumps(response.json())
+                       ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/models.py", line 973, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 85, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 38, in test_s3_file
+    result = active[sample_slice]
+             ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 336, in __getitem__
+    return self._get_selection(index)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 467, in _get_selection
+    return self._from_storage(ds, indexer, array._chunks, out_shape, dtype,
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              compressor, filters, drop_axes, self._axis)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 570, in _from_storage
+    result, count, out_selection = future.result()
+                                   ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 711, in _process_chunk
+    tmp, count = reductionist.reduce_chunk(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<11 lines>...
+        axis,
+        ^^^^^
+        operation=self._method)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 99, in reduce_chunk
+    decode_and_raise_error(response)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 262, in decode_and_raise_error
+    raise ReductionistError(response.status_code, "-") from exc
+activestorage.reductionist.ReductionistError: Reductionist error: HTTP 503: -
+       16.37 real         7.34 user         1.77 sys
+           764444672  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               78818  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               12591  messages sent
+               86473  messages received
+                   0  signals received
+                5490  voluntary context switches
+              235191  involuntary context switches
+        102982183559  instructions retired
+         34401556307  cycles elapsed
+           569002432  peak memory footprint
+----------------------
+Run 9:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.15,3.7)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Confirm slice is (slice(0, 36, None), slice(0, 1753, None), slice(0, 2337, None))
+Result is [[[4708.3046875]]]
+       15.26 real         4.57 user         1.37 sys
+           364134400  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               55698  page reclaims
+                  42  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                8999  messages sent
+               73902  messages received
+                   0  signals received
+                4357  voluntary context switches
+              199247  involuntary context switches
+         65771850657  instructions retired
+         23257576910  cycles elapsed
+           221610944  peak memory footprint
+----------------------
+Run 10:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.15,4.0)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Reductionist error: HTTP 503: -
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/models.py", line 965, in json
+    return complexjson.loads(self.content.decode(encoding), **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 259, in decode_and_raise_error
+    error = json.dumps(response.json())
+                       ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/models.py", line 973, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 85, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 38, in test_s3_file
+    result = active[sample_slice]
+             ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 336, in __getitem__
+    return self._get_selection(index)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 467, in _get_selection
+    return self._from_storage(ds, indexer, array._chunks, out_shape, dtype,
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              compressor, filters, drop_axes, self._axis)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 570, in _from_storage
+    result, count, out_selection = future.result()
+                                   ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 711, in _process_chunk
+    tmp, count = reductionist.reduce_chunk(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<11 lines>...
+        axis,
+        ^^^^^
+        operation=self._method)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 99, in reduce_chunk
+    decode_and_raise_error(response)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 262, in decode_and_raise_error
+    raise ReductionistError(response.status_code, "-") from exc
+activestorage.reductionist.ReductionistError: Reductionist error: HTTP 503: -
+       15.94 real         7.98 user         1.84 sys
+           891027456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               84010  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               13663  messages sent
+               89593  messages received
+                   0  signals received
+                6070  voluntary context switches
+              238679  involuntary context switches
+        113811296138  instructions retired
+         36982623040  cycles elapsed
+           698206752  peak memory footprint
+----------------------

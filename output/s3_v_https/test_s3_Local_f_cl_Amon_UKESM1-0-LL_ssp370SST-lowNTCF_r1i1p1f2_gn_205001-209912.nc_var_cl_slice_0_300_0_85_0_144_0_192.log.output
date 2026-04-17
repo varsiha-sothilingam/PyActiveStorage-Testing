@@ -1,0 +1,79 @@
+Run 1:
+S3 Test file path: bnl/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Target Variable: cl
+Dataset loaded from S3 with s3fs and Pyfive: bnl/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc (0.15,1.4)
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+Confirm slice is (slice(0, 300, None), slice(0, 85, None), slice(0, 144, None), slice(0, 192, None))
+Result is [[[[0.0]]]]
+     1018.36 real       141.66 user        95.11 sys
+           875003904  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              502232  page reclaims
+                  15  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                4500  messages sent
+            12315173  messages received
+                   0  signals received
+                1426  voluntary context switches
+            11176656  involuntary context switches
+       2121788335900  instructions retired
+        901177072895  cycles elapsed
+           451135888  peak memory footprint
+----------------------
+Run 2:
+S3 Test file path: bnl/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Target Variable: cl
+Dataset loaded from S3 with s3fs and Pyfive: bnl/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc (0.25,0.71)
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+Confirm slice is (slice(0, 300, None), slice(0, 85, None), slice(0, 144, None), slice(0, 192, None))
+Result is [[[[0.0]]]]
+      989.25 real       139.25 user        93.19 sys
+           921288704  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              453928  page reclaims
+                   2  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                4358  messages sent
+            12264719  messages received
+                   0  signals received
+                 770  voluntary context switches
+            11197215  involuntary context switches
+       2080599444206  instructions retired
+        882350211164  cycles elapsed
+           534366752  peak memory footprint
+----------------------
+Run 3:
+S3 Test file path: bnl/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Target Variable: cl
+Dataset loaded from S3 with s3fs and Pyfive: bnl/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc (0.26,0.63)
+Loaded dataset <HDF5 dataset "cl": shape (600, 85, 144, 192), type "float32">
+Confirm slice is (slice(0, 300, None), slice(0, 85, None), slice(0, 144, None), slice(0, 192, None))
+Result is [[[[0.0]]]]
+     1022.33 real       145.51 user        92.39 sys
+           877740032  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              579138  page reclaims
+                  15  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                4502  messages sent
+            12476382  messages received
+                   0  signals received
+                 843  voluntary context switches
+            11536769  involuntary context switches
+       2137181553830  instructions retired
+        904467660172  cycles elapsed
+           519948760  peak memory footprint
+----------------------
+Run 4:

@@ -1,0 +1,76 @@
+Run 1:
+S3 Test file path: bnl/ch330a.pc19790301-def.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-def.nc (1.7,4.2e+01)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Confirm slice is (slice(0, 36, None), slice(0, 1753, None), slice(0, 2337, None))
+Result is [[[4708.3046875]]]
+      482.93 real        44.78 user        23.70 sys
+           937984000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              134808  page reclaims
+                 441  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 187  messages sent
+              865316  messages received
+                   0  signals received
+                2001  voluntary context switches
+              706276  involuntary context switches
+        129295145604  instructions retired
+         83793590226  cycles elapsed
+           662276304  peak memory footprint
+----------------------
+Run 2:
+S3 Test file path: bnl/ch330a.pc19790301-def.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-def.nc (0.21,3.9e+01)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 573, in _from_storage
+    for future in concurrent.futures.as_completed(futures):
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 237, in as_completed
+    waiter.event.wait(wait_timeout)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/threading.py", line 670, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/threading.py", line 369, in wait
+    waiter.acquire()
+    ~~~~~~~~~~~~~~^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 86, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 39, in test_s3_file
+    result = active[sample_slice]
+             ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 337, in __getitem__
+    return self._get_selection(index)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 472, in _get_selection
+    return self._from_storage(ds, indexer, array._chunks, out_shape, dtype,
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              compressor, filters, drop_axes, self._axis)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 555, in _from_storage
+    with concurrent.futures.ThreadPoolExecutor(
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+            max_workers=self._max_threads) as executor:
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 667, in __exit__
+    self.shutdown(wait=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 273, in shutdown
+    t.join()
+    ~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/threading.py", line 1133, in join
+    self._os_thread_handle.join(timeout)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyboardInterrupt

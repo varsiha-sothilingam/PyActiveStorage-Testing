@@ -1,0 +1,67 @@
+Run 1:
+Dataset loaded from https with Pyfive: https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 89, in <module>
+    test_https_file()
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 55, in test_https_file
+    result = active[0:40, 0:1920, 0:30, 0:30][0] 
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 323, in __getitem__
+    self.__load_nc_file()
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 309, in __load_nc_file
+    self.ds = nc[ncvar]
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/high_level.py", line 70, in __getitem__
+    return self.__getitem_lazy_control(y, noindex=False)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/high_level.py", line 138, in __getitem_lazy_control
+    return Dataset(obj_name, DatasetID(dataobjs, noindex=noindex), self)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/h5d.py", line 136, in __init__
+    self._build_index()
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/h5d.py", line 394, in _build_index
+    chunk_btree = BTreeV1RawDataChunks(
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/btree.py", line 132, in __init__
+    super().__init__(fh, offset)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/btree.py", line 26, in __init__
+    self._read_children()
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/btree.py", line 35, in _read_children
+    child_node = self._read_node(child_addr, node_level - 1)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/btree.py", line 136, in _read_node
+    node = self._read_node_header(offset, node_level)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/btree.py", line 83, in _read_node_header
+    node = _unpack_struct_from_file(self.B_LINK_NODE, self.fh)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/core.py", line 48, in _unpack_struct_from_file
+    buf = fh.read(size)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/utilities.py", line 143, in read
+    data = self.fh.read(size)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/implementations/http.py", line 644, in read
+    return super().read(length)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/spec.py", line 2122, in read
+    out = self.cache._fetch(self.loc, self.loc + length)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/caching.py", line 539, in _fetch
+    self.cache = self.fetcher(start, bend)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/asyn.py", line 118, in wrapper
+    return sync(self.loop, func, *args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/asyn.py", line 91, in sync
+    if event.wait(1):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/threading.py", line 670, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/threading.py", line 373, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+time: command terminated abnormally
+       12.22 real         0.96 user         0.42 sys
+           164888576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12364  page reclaims
+                 309  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  65  messages sent
+                7733  messages received
+                   2  signals received
+                 712  voluntary context switches
+               12484  involuntary context switches
+          4802388146  instructions retired
+          2727344945  cycles elapsed
+            89031616  peak memory footprint

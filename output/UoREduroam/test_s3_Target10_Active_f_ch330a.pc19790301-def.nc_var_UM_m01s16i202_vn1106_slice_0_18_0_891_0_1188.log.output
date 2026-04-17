@@ -1,0 +1,78 @@
+Run 1:
+S3 Test file path: bnl/ch330a.pc19790301-def.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-def.nc (1.5,7.6)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Confirm slice is (slice(0, 18, None), slice(0, 891, None), slice(0, 1188, None))
+Result is [[[4823.484375]]]
+       12.83 real         1.17 user         0.56 sys
+           292274176  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23644  page reclaims
+                 783  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 105  messages sent
+               18144  messages received
+                   0  signals received
+                 822  voluntary context switches
+               35175  involuntary context switches
+          9141625889  instructions retired
+          4268748371  cycles elapsed
+           219530224  peak memory footprint
+----------------------
+Run 2:
+S3 Test file path: bnl/ch330a.pc19790301-def.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-def.nc (0.51,4.2)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Confirm slice is (slice(0, 18, None), slice(0, 891, None), slice(0, 1188, None))
+Result is [[[4823.484375]]]
+        6.23 real         0.78 user         0.38 sys
+           286785536  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23486  page reclaims
+                  45  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 105  messages sent
+               16342  messages received
+                   0  signals received
+                 209  voluntary context switches
+               33515  involuntary context switches
+          8787815720  instructions retired
+          3636212904  cycles elapsed
+           216957960  peak memory footprint
+----------------------
+Run 3:
+S3 Test file path: bnl/ch330a.pc19790301-def.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-def.nc (0.23,4.6)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Confirm slice is (slice(0, 18, None), slice(0, 891, None), slice(0, 1188, None))
+Result is [[[4823.484375]]]
+        5.41 real         0.65 user         0.32 sys
+           279265280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23994  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 105  messages sent
+               17421  messages received
+                   0  signals received
+                  58  voluntary context switches
+               38303  involuntary context switches
+          9035313765  instructions retired
+          3672778016  cycles elapsed
+           223069216  peak memory footprint
+----------------------

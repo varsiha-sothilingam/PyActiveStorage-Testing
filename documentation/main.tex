@@ -1,0 +1,784 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a4paper, total={6.5in, 9in}]{geometry}
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} %
+\usepackage{amsmath,vhistory}
+
+\usepackage[colorlinks=true,linkcolor=blue]{hyperref}%
+
+\usepackage{xcolor,makecell}
+\usepackage{hyperref}
+
+\usepackage{subcaption} % in preamble
+\usepackage{multirow}
+\date{\today}
+
+\begin{document}
+
+\date{\today}
+\begin{titlepage}
+   \vspace*{\stretch{1.0}}
+   \begin{center}
+        \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+              \Large\textbf{PyActiveStorage}\\
+              \Large\text{Preliminary Testing Results}\\
+        \horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+         
+         \large\text{Varsiha Sothilingam}\\
+         \large\text{NCAS-CMS, University of Reading}\\
+         \large\text{varsiha.sothilingam@ncas.ac.uk}\\
+         \large\text{\today}\\
+         \large\text{Version \vhCurrentVersion : Distributed via Slack}\\
+   \end{center}
+   \vspace*{\stretch{2.0}}
+
+
+
+
+
+\end{titlepage}
+   
+\begin{versionhistory}
+\vhEntry{1}{25.03.2026}{V.S}{Initial document created with draft of an overview in Section 1. 
+                Tests completed so far filled into section 2. An attempt to interpt the results is undergone in Section 3, currently on hold until the last tests are completed. Distributed via Slack}
+\vhEntry{2}{\today}{V.S}{hopefully some more tests and the comparisons}
+\end{versionhistory}
+
+\setcounter{table}{0}
+
+\section{Overview}
+
+Testing undertaken to demonstrate performance of \texttt{PyActiveStorage}, and to quantify factors which impact its ability to perform remote reductions. Different settings are compared and tested, listed below:
+\begin{itemize}
+    \item Chunk size
+    \item Network: UoR Eduroam vs UoR Ethernet
+    \item Methods (min max count sum mean) \textcolor{red}{[Not completed, Note: weights for sum and mean]}
+    \item Data retrieval: Object \texttt{s3} store vs \texttt{https} protocol
+    \item Maximum threads set \textcolor{red}{[Not completed]}
+    \item Cache clearing \textcolor{red}{[Not completed]}
+    \end{itemize}
+
+\noindent The performance is evaluated using the following parameters of interest:
+
+\begin{itemize}
+    \item Real time: wall-clock
+    \item User time: CPU time spent executing process
+    \item Sys time: CPU time spent in kernel/OS
+    \item Idle time: $t_\text{wait} = t_\text{real} - (t_\text{user} + t_\text{sys})$, where reductionist to receive, respond and talk to disk  
+    \item CPU of process: $\frac{t_\text{user}+ t_\text{sys}}{t_\text{real}} \times 100~[\%]$
+    \item Memory usage: from max. resident set size: $\frac{\text{RES}}{1024^2}~[\text{MB}]$
+\end{itemize}
+
+Scripts and data can be found in the following \href{https://github.com/valeriupredoi/testing_PyActiveStorage/tree/main/tests_Varsiha}{Git repository}.
+
+Tests are completed with the following versions:
+\begin{table}[h!] 
+    \centering 
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{cccc}  \hline
+        Name            &   Version                 & Build           & Channel \\ \hline
+        \texttt{pyfive}          &     1.1.1                 &   pyhd8ed1ab\_2  &   conda-forge \\
+        \texttt{pyactivestorage} &     0.7.0.dev2+gf4516e6a8 &   pypi\_0        &   pypi \\ \hline
+    \end{tabular} 
+    \caption{Version Information on libraries} 
+    \label{tab:LibraryVersionInfo} 
+\end{table}
+
+\newpage
+
+\section{Comparing PyActiveStorage with respect to Local Storage}
+
+The execution time of PyActiveStorage to perform data reductions are compared to reductions performed in local storage. For a given file and dataset tested, the proportion of the file tested is varied by so called target percentages. This allows for one to observe how the reductions scales with the percentage of the sliced file. The first results are completed on a file with 3400 chunks and the second file the same as the first file but with a coarser chunking of 64 chunks. Details on the dataset and respective files are presented in  Table \ref{tab:FileInfo_ch330a.pc19790301-bnl-def.nc}. The following tests are performed with datasets accessed via the \texttt{https} and \texttt{s3} protocols to also compare how this impacts the execution time. 
+
+\begin{table}[h!] 
+    \centering 
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{lcc}  \hline
+        \textbf{File}                   & \texttt{ch330a.pc19790301-bnl.nc}    & \texttt{ch330a.pc19790301-def.nc}   \\  
+        \textbf{Filesize}                   & 17.96  GB  & 17.81  GB   \\  
+        \textbf{Dataset}                & \texttt{UM\_m01s16i202\_vn1106}                 &  \texttt{UM\_m01s16i202\_vn1106}                \\ 
+        \textbf{Shape}                  & (40, 1920, 2560)                                &  (40, 1920, 2560)                               \\ 
+        \textbf{Chunk shape}            & (4, 113, 128)                                   &  (10, 480, 640)                                 \\ 
+        \textbf{Chunks per axis}        & [10, 17, 20]                                    &  [4, 4, 4]                                      \\ 
+        \textbf{Number of chunks} & 3400                                            &  64                                             \\  \hline
+    \end{tabular} 
+    \caption{Meta information about the \texttt{ch330a.pc19790301-bnl.nc} and  \texttt{ch330a.pc19790301-def.nc} files for the \texttt{UM\_m01s16i202\_vn1106} dataset.} 
+    \label{tab:FileInfo_ch330a.pc19790301-bnl-def.nc} 
+\end{table}
+
+The target slicing of the file is shown in Table \ref{tab:Local_v_Active_FileSlicing}, with the exact slicing applied to each axis shown along side the exact percentage of the slicing performed on the file. 
+
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{ccc}
+        \hline
+        Target (\%) & Slice Range              & Actual (\%) \\ \hline 
+         100        & [0:40, 0:1920, 0:2560]   & 100         \\
+         75         & [0:36, 0:1753, 0:2337]   & 74.95       \\
+         50         & [0:31, 0:1525, 0:2032]   & 48.74       \\
+         25         & [0:25, 0:1209, 0:1612]   & 24.78       \\        
+         10         & [0:18, 0:891, 0:1188]    & 9.70        \\
+         5          & [0:14, 0:707, 0:942]     & 4.74        \\
+         1          & [0:8, ~0:413, 0:551]     & 0.926       \\ \hline
+    \end{tabular}
+    \caption{The \texttt{ch330a.pc19790301-bnl.nc} file is tested at varying target file percentage for the and \texttt{UM\_m01s16i202\_vn1106} dataset, where this file has 3400 chunks. The slicing applied to achieve the target are shown with the actual percentage this represents.}
+    \label{tab:Local_v_Active_FileSlicing}
+\end{table}
+
+
+The results are obtained by running the same reduction multiple times and averaging over the results in order to account for fluctuations in the network speed. Due to the time taken to run over large slices, fewer iterations are ran for the larger target percentage tests. The results shown in Figure \ref{fig:ExecutionTime_Local_v_Active_3400Chunk} for the 3400 chunked file and in Figure \ref{fig:ExecutionTime_Local_v_Active_64Chunk} for the 64 chunk file. It is clear when comparing both figures that having fewer chunks allows for data reductions to be performed faster. In both cases the reductions done using PyActiveStorage are significantly faster, especially when looking at the ratio in the execution time for Local with respect to Active storage. The ratio grows with the target file size, demonstrating the advantage to performing reductions with the PyActiveStorage tool. For completeness Tables \ref{tab:ExecutionTime_Local_v_Active_3400Chunk} and \ref{tab:ExecutionTime_Local_v_Active_64Chunk} list the average execution times and the number of iterations ran for the varying target sizes.  
+The ratios between Local and Active storage for varying target slices are shown in Figure \ref{fig:Ratio_Execution_Time_LvA} for visualisation. The ratio between the two files execution time for a given storage type, are visualised in Figure \ref{fig:Ratio_Execution_Time_Chunk}, showing that the active storage is independent of the target size, whereas for local storage, this ratio increases with target size. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/ExecutionTime_Local_v_Active_3400Chunk.pdf}
+    \caption{Execution time results of performing data reductions on the file \texttt{ch330a.pc19790301-bnl.nc} which has 3400 chunks. Reductions on the dataset in Active storage compared to reductions completed in local storage. Values shown for varying Target percentage of the file, with the average execution time for local storage, active storage, and the ratio of Local/Active shown on the right hand side.}
+    \label{fig:ExecutionTime_Local_v_Active_3400Chunk}
+\end{figure}
+
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{cccccc}
+        \hline
+& \multicolumn{2}{c}{nIter} & \multicolumn{3}{c}{Execution Time (s)} \\ 
+         Target (\%) & Active & Local & Active               & Local               & Local/Active        \\ \hline
+          100        &  .     & .     & .                    & .                   &  .                  \\
+          75         &  5     & 5     & 15.73 $\pm$   6.56   & 639.55 $\pm$   0.50 &  40.67  $\pm$  1.35 \\
+          50         &  5     & 5     & 15.02 $\pm$   8.74   & 526.50 $\pm$   0.74 &  35.05  $\pm$  1.83 \\
+          25         &  5     & 5     & 14.40 $\pm$  21.80   & 384.21 $\pm$   0.26 &  26.69  $\pm$  1.59 \\       
+          10         & 10     & 10    & 14.55 $\pm$  10.77   & 138.09 $\pm$   0.77 &   9.49  $\pm$  0.90 \\
+          5          & 10     & 10    & 14.92 $\pm$   2.57   & 108.50 $\pm$   1.74 &   7.27  $\pm$  0.87 \\
+          1          & 30     & 30    & 13.97 $\pm$   0.38   &  32.20 $\pm$   0.50 &   2.30  $\pm$  0.09 \\ \hline
+    \end{tabular}
+    \caption{The number of iterations applied to measure the execution time when running with PyActiveStorage or Local storage are provided. Results of the execution time are provided for both tests and the ratio between the Local and PyActiveStorage performance.}
+    \label{tab:ExecutionTime_Local_v_Active_3400Chunk}
+\end{table}
+
+\clearpage
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/ExecutionTime_Local_v_Active_64Chunk.pdf }
+    \caption{Execution time results of performing data reductions on the file \texttt{ch330a.pc19790301-def.nc} which has 64 chunks. Reductions on the dataset in Active storage compared to reductions completed in local storage. Values shown for varying Target percentage of the file, with the average execution time for local storage, active storage, and the ratio of Local/Active shown on the right hand side.}
+    \label{fig:ExecutionTime_Local_v_Active_64Chunk}
+\end{figure}
+
+
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{cccccc}
+        \hline
+& \multicolumn{2}{c}{nIter} & \multicolumn{3}{c}{Execution Time (s)} \\ 
+         Target (\%) & Active & Local & Active               & Local               & Local/Active        \\ \hline
+          100        & 19     & 19    & 4.58 $\pm$ 0.30      & 36.41 $\pm$ 0.86    & 7.95 $\pm$ 0.56     \\
+          75         & 19     & 19    & 5.09 $\pm$ 0.38      & 36.32 $\pm$ 0.35    & 7.13 $\pm$ 0.54     \\
+          50         & 19     & 19    & 4.98 $\pm$ 0.41      & 36.33 $\pm$ 0.38    & 7.30 $\pm$ 0.61     \\
+          25         & 19     & 19    & 5.18 $\pm$ 2.14      & 18.06 $\pm$ 0.82    & 3.49 $\pm$ 1.45     \\       
+          10         & 19     & 19    & 4.48 $\pm$ 0.12      & 8.87 $\pm$ 0.26     & 1.98 $\pm$ 0.08     \\
+          5          & 19     & 19    & 4.40 $\pm$ 0.14      & 8.57 $\pm$ 0.32     & 1.95 $\pm$ 0.10     \\
+          1          & 19     & 19    & 4.93 $\pm$ 0.53      & 5.48 $\pm$ 0.61     & 1.11 $\pm$ 0.17     \\ \hline
+    \end{tabular}
+    \caption{The number of iterations applied to measure the execution time when running with PyActiveStorage or Local storage are provided. Results of the execution time are provided for both tests and the ratio between the Local and PyActiveStorage performance.}
+    \label{tab:ExecutionTime_Local_v_Active_64Chunk}
+\end{table}
+
+\begin{figure}[h!]
+    \centering
+    % First Subfigure
+    \begin{subfigure}{0.8\textwidth} % Increased width for vertical stacking
+        \centering
+        \includegraphics[width=\linewidth]{figures/Ratio_Analysis_Local_v_Active_3400Chunk.pdf}
+        \caption{File of 3400 chunks}
+    \end{subfigure}
+    
+    \vspace{1em} % Adds a little vertical space between the images
+
+    % Second Subfigure
+    \begin{subfigure}{0.8\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/Ratio_Analysis_Local_v_Active_64Chunk.pdf}
+        \caption{File of 64 chunks}
+    \end{subfigure}
+    
+    \caption{Ratio of execution time comparing local and active storage for the same file and dataset but with a different chunking structure.}
+    \label{fig:Ratio_Execution_Time_LvA}
+\end{figure}
+ 
+\clearpage
+
+\begin{figure}[h!]
+    \centering
+    % First Subfigure
+    \begin{subfigure}{0.8\textwidth} % Increased width for vertical stacking
+        \centering
+        \includegraphics[width=\linewidth]{figures/ActiveChunkingRatio.pdf}
+        \caption{Active Storage}
+    \end{subfigure}
+    
+    \vspace{1em} % Adds a little vertical space between the images
+
+    % Second Subfigure
+    \begin{subfigure}{0.8\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figures/LocalChunkingRatio.pdf}
+        \caption{Local Storage}
+    \end{subfigure}
+    \caption{Ratio of execution time comparing different chunking, for a given storage setting.}
+    \label{fig:Ratio_Execution_Time_Chunk}
+\end{figure}
+ 
+\clearpage
+
+\section{Comparing https and s3 protocols}
+
+For the file and dataset presented in Table \ref{tab:fileinfo_cl_Amon_UKESM1-0-LL_ssp370SST}, a test is performed to understand how the different protocols to retrieve the file varies the performance of the data reductions. The results of the study are presented in Figure \ref{fig:ExecutionTime_HTTPS_vs_S3}. For both protocols, the active storage executes reductions faster. The two protocols are compatible when considering the use of active storage. 
+
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lc}  \hline
+        \textbf{File}                   & \texttt{cl\_Amon\_UKESM1-0-LL\_ssp370SST-lowNTCF\_r1i1p1f2\_gn\_205001-209912.nc} \\  
+        \textbf{File size}              & 2.36 GB             \\  
+        \textbf{Dataset}                & \texttt{cl}         \\ 
+        \textbf{Shape}                  & (600, 85, 144, 192) \\ 
+        \textbf{Chunk shape}            & (1, 43, 72, 96)     \\ 
+        \textbf{Chunks per axis}        & (600, 2, 2, 2)      \\ 
+        \textbf{Total number of chunks} & 4800                \\   \hline
+    \end{tabular} 
+    \caption{} 
+    \label{tab:fileinfo_cl_Amon_UKESM1-0-LL_ssp370SST} 
+\end{table}
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{figures/ExecutionTime_HTTPS_vs_S3.pdf }
+    \caption{}
+    \label{fig:ExecutionTime_HTTPS_vs_S3}
+\end{figure}
+
+
+\section{Caching Tests}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|c|c|c|}
+\hline
+\textbf{Dataset Size} & \textbf{State} & \textbf{Wait Time (s)} & \textbf{CPU (\%)} & \textbf{Memory (MB)} \\ \hline
+3,400 Chunks (5\%) & Cold & 16.28 & 18.36 & 316.31 \\ \hline
+3,400 Chunks (5\%) & Warm & 11.35 & 20.93 & 311.78 \\ \hline  \hline
+64 Chunks (100\%) & Cold & 7.96 & 18.02 & 306.48 \\ \hline
+64 Chunks (100\%) & Warm & 3.29 & 28.31 & 301.80 \\ \hline
+\end{tabular}
+\caption{Comparison of Remote Calculation KPIs: Cold vs. Warm Cache}
+\label{tab:kpi_results}
+\end{table}
+
+
+
+\section{Test Conditions \& Results}
+
+In order to understand the performance, multiple iterations of a given test are completed in order to fill histograms and evaluate the average performance. Caching of the data will directly influence its performance. Therefore, an initial ``cold" run is ran such that for the following ``warm" runs, the caching of the data is already present on the Reductionist. Typically 60 warm runs are recorded, however if a process was very slow, it was capped at an earlier number of iterations. This will be indicated in the respective testing sections. Unless stated otherwise, tests are performed with the number of maximum threads is set to 100, the method applied is \texttt{min} and the data file is retrieved from the \texttt{s3} object store.
+
+%-----------------------------------------------------------------------------------
+%                          TEST 1
+%-----------------------------------------------------------------------------------
+\subsection{Test 1}
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lc}  \hline
+                                        & Test 1                                          \\ \hline
+        \textbf{File}                   & \texttt{ch330a.pc19790301-bnl.nc}  (17.96  GB)  \\  
+        \textbf{Dataset}                & \texttt{UM\_m01s16i202\_vn1106}                 \\ 
+        \textbf{Shape}                  & (40, 1920, 2560)                                \\ 
+        \textbf{Chunk shape}            & (4, 113, 128)                                   \\ 
+        \textbf{Chunks per axis}        & [10, 17, 20]                                    \\ 
+        \textbf{Total number of chunks} & 3400                                            \\ 
+        \textbf{Slicing applied}        & [0:4, 0:30, 0:30]                               \\ 
+        \textbf{No. of Iterations}      & 60                                              \\  \hline
+    \end{tabular} 
+    \caption{} 
+    \label{tab:T1_Conditions} 
+\end{table}
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cc}
+        \hline
+        \textbf{Results} & Test 1              \\ \hline
+        Real Time [s]    & 14.696 $\pm$ 1.842   \\
+        User Time [s]    & 1.610  $\pm$ 0.445   \\
+        Sys Time [s]     & 0.902  $\pm$ 0.232   \\
+        Wait Time [s]    & 12.185 $\pm$ 1.189   \\
+        Memory [MB]      & 286.142 $\pm$ 10.856 \\
+        CPU Util [\%]    & 16.904 $\pm$ 1.700   \\
+        \hline
+    \end{tabular}
+    \caption{Test 1 Results}
+    \label{tab:T1_Results}
+\end{table}
+
+%-----------------------------------------------------------------------------------
+%                          TEST 2
+%-----------------------------------------------------------------------------------
+\subsection{Test 2}
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lc}  \hline
+                                        & Test 2                                          \\ \hline
+        \textbf{File}                   & \texttt{ch330a.pc19790301-bnl.nc}  (17.96  GB)  \\  
+        \textbf{Dataset}                &  \texttt{UM\_m01s30i202\_vn1106}                \\ 
+        \textbf{Shape}                  &  (40, 7, 1921, 2560)                            \\ 
+        \textbf{Chunk shape}            &  (4, 1, 113, 128)                               \\ 
+        \textbf{Chunks per axis}        &  [10, 7, 17, 20]                                \\ 
+        \textbf{Total number of chunks} &    23800                                        \\ 
+        \textbf{Slicing applied}        & [0:4, 0:1, 0:30, 0:30]                          \\ 
+        \textbf{No. of Iterations}      &  20                                             \\  \hline
+    \end{tabular} 
+    \caption{} 
+    \label{tab:T2_Conditions} 
+\end{table}
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cc}
+        \hline
+        \textbf{Results} & Test 2              \\ \hline
+        Real Time [s]    & 65.147 $\pm$ 1.622  \\
+        User Time [s]    & 6.154  $\pm$ 0.184  \\
+        Sys Time [s]     & 3.503  $\pm$ 0.095  \\
+        Wait Time [s]    & 55.489 $\pm$ 1.380  \\
+        Memory [MB]      & 304.298 $\pm$ 8.933 \\
+        CPU Util [\%]    & 14.824 $\pm$ 0.178  \\
+        \hline
+    \end{tabular}
+    \caption{Test 2 Results}
+    \label{tab:T2_Results}
+\end{table}
+
+%-----------------------------------------------------------------------------------
+%                          TEST 3
+%-----------------------------------------------------------------------------------
+\break
+\subsection{Test 3}
+
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lc}  \hline
+                                        & Test 3                                          \\ \hline
+        \textbf{File}                   & \texttt{ch330a.pc19790301-def.nc} (17.81  GB)   \\  
+        \textbf{Dataset}                &  \texttt{UM\_m01s16i202\_vn1106}  \\ 
+        \textbf{Shape}                  &  (40, 1920, 2560)                 \\ 
+        \textbf{Chunk shape}            &  (10, 480, 640)                   \\ 
+        \textbf{Chunks per axis}        &  [4, 4, 4]                        \\ 
+        \textbf{Total number of chunks} &  64                               \\ 
+        \textbf{Slicing applied}        &  [0:4, 0:30, 0:30]                \\ 
+        \textbf{No. of Iterations}      &  60                               \\  \hline
+    \end{tabular} 
+    \caption{} 
+    \label{tab:T3_Conditions} 
+\end{table}
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cc}
+        \hline
+        \textbf{Results} & Test 3              \\ \hline
+        Real Time [s]    &  4.937 $\pm$ 1.283   \\
+        User Time [s]    &  0.657 $\pm$ 0.219   \\
+        Sys Time [s]     &  0.345 $\pm$ 0.107   \\
+        Wait Time [s]    &  3.935 $\pm$ 0.985   \\
+        Memory [MB]      &  269.209 $\pm$ 9.498 \\
+        CPU Util [\%]    &  20.136 $\pm$ 1.744  \\
+        \hline
+    \end{tabular}
+    \caption{Test 3 Results}
+    \label{tab:T3_Results}
+\end{table}
+
+%-----------------------------------------------------------------------------------
+%                          TEST 4
+%-----------------------------------------------------------------------------------
+\subsection{Test 4}
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lc}  \hline
+                                        & Test 4                                          \\ \hline
+        \textbf{File}                   & \texttt{ch330a.pc19790301-def.nc} (17.81  GB)  \\  
+        \textbf{Dataset}                & \texttt{UM\_m01s30i202\_vn1106}     \\ 
+        \textbf{Shape}                  & (40, 7, 1921, 2560)                 \\ 
+        \textbf{Chunk shape}            & (8, 1, 385, 512)                    \\ 
+        \textbf{Chunks per axis}        & [5, 7, 5, 5]                        \\ 
+        \textbf{Total number of chunks} & 875                                 \\ 
+        \textbf{Slicing applied}        & 0:4, 0:1, 0:30, 0:30]               \\ 
+        \textbf{No. of Iterations}      & 20                                  \\  \hline
+    \end{tabular} 
+    \caption{} 
+    \label{tab:T4_Conditions} 
+\end{table}
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cc}
+        \hline
+        \textbf{Results} & Test 4               \\ \hline
+        Real Time [s]    &  18.605 $\pm$ 0.816  \\
+        User Time [s]    &  1.876 $\pm$ 0.135   \\
+        Sys Time [s]     &  1.058 $\pm$ 0.054   \\
+        Wait Time [s]    &  15.673 $\pm$ 0.654  \\
+        Memory [MB]      &  286.00 $\pm$ 9.291  \\
+        CPU Util [\%]    &  15.756 $\pm$ 0.463  \\
+        \hline
+    \end{tabular}
+    \caption{Test 4 Results}
+    \label{tab:T4_Results}
+\end{table}
+
+%-----------------------------------------------------------------------------------
+%                          TEST 5
+%-----------------------------------------------------------------------------------
+\break
+\subsection{Test 5}
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lc}  \hline
+                                        & Test 5                                                                                                        \\ \hline
+        \textbf{File}                   &  \makecell{\texttt{cl\_Amon\_UKESM1-0-LL\_ssp370SST}\\ \texttt{-lowNTCF\_r1i1p1f2\_gn\_205001-209912.nc} (2.36 GB)}     \\  
+        \textbf{Dataset}                &\texttt{cl}                                                                                \\ 
+        \textbf{Shape}                  &  (600, 85, 144, 192)                                                                                              \\ 
+        \textbf{Chunk shape}            & (1, 43, 72, 96)                                                                                                 \\ 
+        \textbf{Chunks per axis}        & (600, 2, 2, 2)                                                                                                  \\ 
+        \textbf{Total number of chunks} & 4800                                                                                                          \\ 
+        \textbf{Slicing applied}        & [0:4, 0:1, 0:30, 0:30]                                                                                             \\ 
+        \textbf{No. of Iterations}      & 20                                                                                                            \\  \hline
+    \end{tabular} 
+    \caption{} 
+    \label{tab:T5_Conditions} 
+\end{table}
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cc}
+        \hline
+        \textbf{Results} & Test 5              \\ \hline
+        Real Time [s]    & 30.014 $\pm$ 0.898  \\
+        User Time [s]    & 2.981 $\pm$ 0.098   \\
+        Sys Time [s]     & 1.606 $\pm$ 0.073   \\
+        Wait Time [s]    & 25.428 $\pm$ 0.772  \\
+        Memory [MB]      & 289.440 $\pm$ 8.367 \\
+        CPU Util [\%]    & 15.282 $\pm$ 0.266  \\
+        \hline
+    \end{tabular}
+    \caption{Test 5 Results}
+    \label{tab:T5_Results}
+\end{table}
+
+%-----------------------------------------------------------------------------------
+%                          TEST 6
+%-----------------------------------------------------------------------------------
+\subsection{Test 6}
+
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lc}  \hline
+                                        & Test 6                                         \\ \hline
+        \textbf{File}                   & \texttt{da193a\_25\_day\_\_198808-198808.nc}   \\  
+        \textbf{Dataset}                &\texttt{m01s06i247\_4 }                         \\ 
+        \textbf{Shape}                  & (30, 39, 325, 432)                             \\ 
+        \textbf{Chunk shape}            & (1, 39, 325, 432)                              \\ 
+        \textbf{Chunks per axis}        &  (30, 1, 1, 1) )                               \\ 
+        \textbf{Total number of chunks} & 30                                             \\ 
+        \textbf{Slicing applied}        & [0:4, 0:1, 0:30, 0:30]                         \\ 
+        \textbf{No. of Iterations}      & 60                                             \\  \hline
+    \end{tabular}
+    \caption{} 
+    \label{tab:T6_Conditions} 
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cc}
+        \hline
+        \textbf{Results} & Test 6              \\ \hline
+        Real Time [s]    & 1.242 $\pm$ 0.091  \\
+        User Time [s]    & 0.333 $\pm$ 0.012  \\
+        Sys Time [s]     & 0.138 $\pm$ 0.008  \\
+        Wait Time [s]    & 0.772 $\pm$ 0.087  \\
+        Memory [MB]      & 206.392 $\pm$ 1.525\\
+        CPU Util [\%]    & 38.032 $\pm$ 2.294 \\
+        \hline
+    \end{tabular}
+    \caption{Test 6 Results}
+    \label{tab:T6_Results}
+\end{table}
+
+
+%-----------------------------------------------------------------------------------
+%                          TEST 7
+%-----------------------------------------------------------------------------------
+\break
+\subsection{Test 7}
+
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lc}  \hline
+                                        & Test 7                                         \\ \hline
+        \textbf{File}                   & \texttt{da193a\_25\_6hr\_t\_pt\_cordex\_\_198807-198807.nc} (6.13 GB)   \\  
+        \textbf{Dataset}                &\texttt{ m01s30i111  }                         \\ 
+        \textbf{Shape}                  & (120, 85, 324, 432)                             \\ 
+        \textbf{Chunk shape}            & (1, 85, 324, 432)                              \\ 
+        \textbf{Chunks per axis}        &  (120, 1, 1, 1) )                               \\ 
+        \textbf{Total number of chunks} & 120                                             \\ 
+        \textbf{Slicing applied}        & [0:4, 0:1, 0:30, 0:30]                         \\ 
+        \textbf{No. of Iterations}      & 20                                             \\  \hline
+    \end{tabular}
+    \caption{} 
+    \label{tab:T7_Conditions} 
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cc}
+        \hline
+        \textbf{Results} & Test 7              \\ \hline
+        Real Time [s]    & 2.917 $\pm$ 0.167  \\
+        User Time [s]    & 0.497 $\pm$ 0.052  \\
+        Sys Time [s]     & 0.232 $\pm$ 0.031  \\
+        Wait Time [s]    & 2.187 $\pm$ 0.106  \\
+        Memory [MB]      & 276.494 $\pm$ 8.837\\
+        CPU Util [\%]    & 24.957 $\pm$ 1.729 \\
+        \hline
+    \end{tabular}
+    \caption{Test 7 Results}
+    \label{tab:T7_Results}
+\end{table}
+
+%-----------------------------------------------------------------------------------
+%                          TEST 8
+%-----------------------------------------------------------------------------------
+\break
+\subsection{Test 8}
+Test 8 has the same conditions as Test 1 except now it is ran on the UoR Eduroam network instead in order to compare the difference between the network and wifi performance of the PyActiveStorage. As running on the WiFi is much slower, only 10 iterations are ran to determine the results.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cc}
+        \hline
+        \textbf{Results} & Test 8              \\ \hline
+        Real Time [s]    &80.063 $\pm$ 18.940 \\
+        User Time [s]    &6.533 $\pm$ 0.672   \\
+        Sys Time [s]     &3.132 $\pm$ 0.390   \\
+        Wait Time [s]    &70.398 $\pm$ 19.189 \\
+        Memory [MB]      &290.321 $\pm$ 5.774 \\
+        CPU Util [\%]    &12.533 $\pm$ 2.230  \\
+        \hline
+    \end{tabular}
+    \caption{Test 8 Results}
+    \label{tab:T8_Results}
+\end{table}
+
+
+%-----------------------------------------------------------------------------------
+%                          TEST 9
+%-----------------------------------------------------------------------------------
+
+\subsection{Test 9}
+Test 9 is the same as Test 5 except in how the data is read in. Test 5 uses the s3 object store, with the file stored in the bnl bucket. For Test 9, the same file is accessed via https of the ESGF CEDA catalogue . 
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cc}
+        \hline
+        \textbf{Results} & Test 9                \\ \hline
+        Real Time [s]    &  140.162 $\pm$ 9.966  \\
+        User Time [s]    &  3.594   $\pm$ 0.299  \\
+        Sys Time [s]     &  1.704   $\pm$ 0.111  \\
+        Wait Time [s]    &  134.864 $\pm$ 9.688  \\
+        Memory [MB]      &  168.608 $\pm$ 14.878 \\
+        CPU Util [\%]    &  3.785   $\pm$ 0.212  \\
+        \hline
+    \end{tabular}
+    \caption{Test 9 Results}
+    \label{tab:T9_Results}
+\end{table}
+
+
+%-----------------------------------------------------------------------------------
+%                          TEST 10
+%-----------------------------------------------------------------------------------
+
+\subsection{Test 10}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cc}
+        \hline
+        \textbf{Results} & Test 10                \\ \hline
+        Real Time [s]    &  16.346  $\pm$ 0.619  \\
+        User Time [s]    &  1.756   $\pm$ 0.122  \\
+        Sys Time [s]     &  0.971   $\pm$ 0.069  \\
+        Wait Time [s]    &  13.620  $\pm$ 0.518  \\
+        Memory [MB]      &  333.869 $\pm$ 8.949 \\
+        CPU Util [\%]    &  16.675  $\pm$ 0.867  \\
+        \hline
+    \end{tabular}
+    \caption{Test 10 Results}
+    \label{tab:T10_Results}
+\end{table}
+ 
+
+
+\section{Tests \textcolor{red}{Rough draft, need to check still}}
+
+
+\subsection{File sizes, data shapes and chunking variations}
+\subsubsection{Data Shape}
+This test aims to understand how the choice of a HDF5 dataset, i.e its shape, influences the performance. Shown in Table \ref{tab:T1T2_Conditions} are the difference in the datasets chosen. The additional dimension in the \texttt{UM\_m01s30i202\_vn1106} dataset slows down the running time and therefore it is tested on a smaller number of iterations. 
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lcc}  \hline
+                                        & Test 1                            & Test 2                              \\ \hline
+        \textbf{File}                   & \multicolumn{2}{c}{ \texttt{ch330a.pc19790301-bnl.nc}  (17.96  GB)}     \\                                       
+        \textbf{Dataset}                &\texttt{UM\_m01s16i202\_vn1106}    & \texttt{UM\_m01s30i202\_vn1106}     \\ 
+        \textbf{Shape}                  & (40, 1920, 2560)                  & (40, 7, 1921, 2560)                 \\ 
+        \textbf{Chunk shape}            & (4, 113, 128)                     & (4, 1, 113, 128)                    \\ 
+        \textbf{Chunks per axis}        & [10, 17, 20]                      & [10, 7, 17, 20]                     \\ 
+        \textbf{Total number of chunks} & 3400                              &   23800                             \\ 
+        \textbf{Slicing applied}        & [0:4, 0:30, 0:30]                 &[0:4, 0:1, 0:30, 0:30]               \\ 
+        \textbf{No. of Iterations}      & 60                                & 20                                  \\  \hline
+    \end{tabular} 
+    \caption{Properties of the tests performed when varying the HDF5 Dataset in the \texttt{ch330a.pc19790301-bnl.nc} file. For both tests the number of maximum threads is set to 100, the method applied is \texttt{min} and the data file is retrieved from the \texttt{s3} object store.} 
+    \label{tab:T1T2_Conditions} 
+\end{table}
+
+
+
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lccc}
+        \hline
+        \textbf{Results}  & Test 1               & Test 2               & $T1/T2$ \\ \hline
+        Real Time [s]     & 14.696 $\pm$ 1.842   & 65.147 $\pm$ 1.622   & 0.226 $\pm$ 0.029 \\
+        User Time [s]     & 1.610  $\pm$ 0.445   & 6.154  $\pm$ 0.184   & 0.262 $\pm$ 0.073 \\
+        Sys Time [s]      & 0.902  $\pm$ 0.232   & 3.503  $\pm$ 0.095   & 0.257 $\pm$ 0.067 \\
+        Wait Time [s]     & 12.185 $\pm$ 1.189   & 55.489 $\pm$ 1.380   & 0.220 $\pm$ 0.022 \\
+        Memory [MB]       & 286.142 $\pm$ 10.856 & 304.298 $\pm$ 8.933  & 0.940 $\pm$ 0.046 \\
+        CPU Util [\%]     & 16.904 $\pm$ 1.700   & 14.824 $\pm$ 0.178   & 1.140 $\pm$ 0.116 \\
+        \hline
+    \end{tabular}
+    \caption{Results obtained from Test 1 and 2, showing all parameters of interest. The ratio between the two tests, $T1/T2$ is shown with propagated uncertainties.} 
+    \label{tab:T1T2_Results} 
+\end{table}
+
+\noindent Table \ref{tab:T1T2_Results} shows the averaged results for the parameters of interest. Main observations are as follows:
+\begin{itemize}
+    \item CPU and Memory values are compatible between the tests
+    \item Key difference in the Wait Time (I/O of the data). Although only one additional chunk is selected, the variable has seven times more chunks in the file which will increase the overhead due to factors such as additional metadata lookup and chunk indexing. 
+
+\end{itemize}
+
+\subsubsection{Coarser Chunking}
+The same HDF5 datasets are studied in another file where the number of chunks is coarser. The number of chunks along with the testing conditions can be found in Table \ref{tab:T3T4_Conditions}. 
+
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lcc}  \hline
+                                        & Test 3                            & Test 4                              \\ \hline
+        \textbf{File}                   & \multicolumn{2}{c}{ \texttt{ch330a.pc19790301-def.nc} (17.81  GB)}      \\                                       
+        \textbf{Dataset}                & \texttt{UM\_m01s16i202\_vn1106}   & \texttt{UM\_m01s30i202\_vn1106}     \\ 
+        \textbf{Shape}                  & (40, 1920, 2560)                  & (40, 7, 1921, 2560)                 \\ 
+        \textbf{Chunk shape}            & (10, 480, 640)                    & (8, 1, 385, 512)                    \\ 
+        \textbf{Chunks per axis}        & [4, 4, 4]                         & [5, 7, 5, 5]                        \\ 
+        \textbf{Total number of chunks} & 64                                & 875                                 \\ 
+        \textbf{Slicing applied}        & [0:4, 0:30, 0:30]                 &[0:4, 0:1, 0:30, 0:30]               \\ 
+        \textbf{No. of Iterations}      & 60                                & 20                                  \\  \hline
+    \end{tabular} 
+    \caption{Variables compared from the \texttt{ch330a.pc19790301-def.nc} file, for a maximum number of threads of 100, method applied is \texttt{min} and the data file is retrieved from the \texttt{s3} object store.} 
+    \label{tab:T3T4_Conditions} 
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{cccc}
+        \hline
+        \textbf{Results} & Test 3               & Test 4               & $T3/T4$ \\ \hline
+        Real Time [s]    & 4.937 $\pm$ 1.283    & 18.605 $\pm$ 0.816   & 0.265 $\pm$ 0.070 \\
+        User Time [s]    & 0.657 $\pm$ 0.219    & 1.876 $\pm$ 0.135    & 0.350 $\pm$ 0.118 \\
+        Sys Time [s]     & 0.345 $\pm$ 0.107    & 1.058 $\pm$ 0.054    & 0.326 $\pm$ 0.103 \\
+        Wait Time [s]    & 3.935 $\pm$ 0.985    & 15.673 $\pm$ 0.654   & 0.251 $\pm$ 0.064 \\
+        Memory [MB]      & 269.209 $\pm$ 9.498  & 286.00 $\pm$ 9.291   & 0.941 $\pm$ 0.047 \\
+        CPU Util [\%]    & 20.136 $\pm$ 1.744   & 15.756 $\pm$ 0.463  & 1.278 $\pm$ 0.115 \\
+        \hline
+    \end{tabular}
+    \caption{Variables compared from the \texttt{ch330a.pc19790301-def.nc} file. The factor $T3/T4$ is shown with propagated uncertainty based on the relative standard deviations of both tests.}
+    \label{tab:T3T4_Results}
+\end{table}
+
+\break
+\noindent Table \ref{tab:T3T4_Results} shows the averaged results for the parameters of interest. Main observations are as follows:
+\begin{itemize}
+    \item The ratios for all parameters are very similar to that observed in Table \ref{tab:T1T2_Results}, showing that the additional dimension in the data shape has the same impact, even if other axis are chunked coarser. 
+\end{itemize}
+
+\begin{table}[h!] 
+    \centering 
+    \begin{tabular}{lcc}  \hline
+        \textbf{Results} & Test 1               &   Test 3              \\ \hline
+        Real Time [s]    & 14.696 $\pm$ 1.842   &   4.937 $\pm$ 1.283   \\
+        User Time [s]    & 1.610  $\pm$ 0.445   &   0.657 $\pm$ 0.219   \\
+        Sys Time [s]     & 0.902  $\pm$ 0.232   &   0.345 $\pm$ 0.107   \\
+        Wait Time [s]    & 12.185 $\pm$ 1.189   &   3.935 $\pm$ 0.985   \\
+        Memory [MB]      & 286.142 $\pm$ 10.856 &   269.209 $\pm$ 9.498 \\
+        CPU Util [\%]    & 16.904 $\pm$ 1.700   &   20.136 $\pm$ 1.744  \\ \hline \hline
+
+
+        \textbf{Results}   & Test 2               & Test 4             \\ \hline
+        Real Time [s]      & 65.147 $\pm$ 1.622   & 18.605 $\pm$ 0.816 \\
+        User Time [s]      & 6.154  $\pm$ 0.184   & 1.876 $\pm$ 0.135  \\
+        Sys Time [s]       & 3.503  $\pm$ 0.095   & 1.058 $\pm$ 0.054  \\
+        Wait Time [s]      & 55.489 $\pm$ 1.380   & 15.673 $\pm$ 0.654 \\
+        Memory [MB]        &304.298 $\pm$ 8.933   & 286.00 $\pm$ 9.291 \\
+        CPU Util [\%]      & 14.824 $\pm$ 0.178   & 15.756 $\pm$ 0.463 \\ \hline \hline
+
+        
+    \end{tabular} 
+    \caption{Variables compared from the \texttt{ch330a.pc19790301-def.nc} file, for a maximum number of threads of 100, method applied is \texttt{min} and the data file is retrieved from the \texttt{s3} object store.} 
+    \label{tab:T1T2T3T4_ChunkResults}
+\end{table}
+
+
+\noindent The impact of the coarser chunking can be compared for the same dataset between the two files. The results for how the chunking impacts the parameters of interest are shown in Table \ref{tab:T1T2T3T4_ChunkResults} where Test 1 and 3 compare for the \texttt{UM\_m01s16i202\_vn1106} data set, and Test 2 and 4 the \texttt{UM\_m01s30i202\_vn1106} data set. The main observations are as follows:
+
+\begin{itemize}
+    \item The smaller number of chunks allows for the reductions to be completed faster.
+    \item The CPU usuage is similar due to a short process time, there are fewer idle resources.
+    \item T2/T4 ratio takes more time due to 
+\end{itemize}
+
+
+\subsection{UoR Ethernet vs Eduroam}
+
+
+
+
+
+
+\subsection{s3 v https}
+
+
+
+
+
+
+
+
+\end{document}

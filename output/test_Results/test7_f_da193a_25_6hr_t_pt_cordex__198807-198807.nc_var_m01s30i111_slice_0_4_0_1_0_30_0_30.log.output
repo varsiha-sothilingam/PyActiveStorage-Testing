@@ -1,0 +1,1980 @@
+Run 1:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.17,0.74)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.65 real         0.42 user         0.19 sys
+           275103744  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21022  page reclaims
+                   2  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8270  messages received
+                   0  signals received
+                  28  voluntary context switches
+               18977  involuntary context switches
+          6499175316  instructions retired
+          2468351025  cycles elapsed
+           179258160  peak memory footprint
+----------------------
+Run 2:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.74)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.72 real         0.43 user         0.20 sys
+           294961152  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22182  page reclaims
+                  51  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8326  messages received
+                   0  signals received
+                  29  voluntary context switches
+               19082  involuntary context switches
+          6383364742  instructions retired
+          2448224636  cycles elapsed
+           178308032  peak memory footprint
+----------------------
+Run 3:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.92)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.99 real         0.50 user         0.24 sys
+           288178176  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20807  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9591  messages received
+                   0  signals received
+                  29  voluntary context switches
+               20485  involuntary context switches
+          6596697370  instructions retired
+          2646899386  cycles elapsed
+           180880344  peak memory footprint
+----------------------
+Run 4:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.85)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.00 real         0.49 user         0.24 sys
+           287588352  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21781  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9351  messages received
+                   0  signals received
+                  30  voluntary context switches
+               19272  involuntary context switches
+          6561577348  instructions retired
+          2569763421  cycles elapsed
+           186909728  peak memory footprint
+----------------------
+Run 5:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.73)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.90 real         0.51 user         0.25 sys
+           296468480  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22307  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9387  messages received
+                   0  signals received
+                  29  voluntary context switches
+               19316  involuntary context switches
+          6578487052  instructions retired
+          2607882117  cycles elapsed
+           182764672  peak memory footprint
+----------------------
+Run 6:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.76)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.94 real         0.52 user         0.24 sys
+           293715968  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21127  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9441  messages received
+                   0  signals received
+                  30  voluntary context switches
+               19143  involuntary context switches
+          6457186600  instructions retired
+          2551964947  cycles elapsed
+           183763928  peak memory footprint
+----------------------
+Run 7:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.8)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.06 real         0.59 user         0.29 sys
+           293126144  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22132  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+               10011  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19276  involuntary context switches
+          6502399480  instructions retired
+          2623468788  cycles elapsed
+           188105712  peak memory footprint
+----------------------
+Run 8:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.73)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.15 real         0.63 user         0.30 sys
+           297172992  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21343  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+               10293  messages received
+                   0  signals received
+                  30  voluntary context switches
+               18526  involuntary context switches
+          6506573735  instructions retired
+          2658720461  cycles elapsed
+           180273992  peak memory footprint
+----------------------
+Run 9:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.74)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.03 real         0.53 user         0.26 sys
+           302366720  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21663  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9492  messages received
+                   0  signals received
+                  31  voluntary context switches
+               19499  involuntary context switches
+          6457476154  instructions retired
+          2597848820  cycles elapsed
+           182436872  peak memory footprint
+----------------------
+Run 10:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.16,0.79)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.15 real         0.58 user         0.30 sys
+           313884672  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22373  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+               10148  messages received
+                   0  signals received
+                  28  voluntary context switches
+               20266  involuntary context switches
+          6671506837  instructions retired
+          2828513502  cycles elapsed
+           181896200  peak memory footprint
+----------------------
+Run 11:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.77)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.98 real         0.45 user         0.22 sys
+           288915456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21372  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9692  messages received
+                   0  signals received
+                  29  voluntary context switches
+               19904  involuntary context switches
+          6482707527  instructions retired
+          2535845374  cycles elapsed
+           181060400  peak memory footprint
+----------------------
+Run 12:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.72)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.96 real         0.54 user         0.26 sys
+           285507584  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22173  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9457  messages received
+                   0  signals received
+                  29  voluntary context switches
+               19217  involuntary context switches
+          6457360133  instructions retired
+          2623477635  cycles elapsed
+           180290424  peak memory footprint
+----------------------
+Run 13:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.16,0.86)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.07 real         0.53 user         0.26 sys
+           307331072  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22498  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9904  messages received
+                   0  signals received
+                  31  voluntary context switches
+               19781  involuntary context switches
+          6506756465  instructions retired
+          2620036917  cycles elapsed
+           182977496  peak memory footprint
+----------------------
+Run 14:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.77)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.90 real         0.51 user         0.24 sys
+           298221568  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22431  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9561  messages received
+                   0  signals received
+                  29  voluntary context switches
+               19741  involuntary context switches
+          6479682903  instructions retired
+          2602467493  cycles elapsed
+           184419336  peak memory footprint
+----------------------
+Run 15:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.72)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.86 real         0.50 user         0.24 sys
+           297648128  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21376  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9438  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19689  involuntary context switches
+          6453445918  instructions retired
+          2580861249  cycles elapsed
+           178619232  peak memory footprint
+----------------------
+Run 16:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.74)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.91 real         0.46 user         0.22 sys
+           289505280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22403  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9389  messages received
+                   0  signals received
+                  31  voluntary context switches
+               19549  involuntary context switches
+          6464239069  instructions retired
+          2491983090  cycles elapsed
+           178832224  peak memory footprint
+----------------------
+Run 17:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.8)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.94 real         0.50 user         0.24 sys
+           291471360  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21516  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9259  messages received
+                   0  signals received
+                  31  voluntary context switches
+               19138  involuntary context switches
+          6438045201  instructions retired
+          2556220274  cycles elapsed
+           181011392  peak memory footprint
+----------------------
+Run 18:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.75)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.91 real         0.48 user         0.23 sys
+           294043648  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22678  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9380  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19621  involuntary context switches
+          6462871505  instructions retired
+          2584543991  cycles elapsed
+           179897208  peak memory footprint
+----------------------
+Run 19:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.75)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.92 real         0.52 user         0.25 sys
+           293011456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22112  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9329  messages received
+                   0  signals received
+                  30  voluntary context switches
+               19102  involuntary context switches
+          6450217806  instructions retired
+          2576590501  cycles elapsed
+           182125504  peak memory footprint
+----------------------
+Run 20:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.74)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.96 real         0.55 user         0.26 sys
+           292880384  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22103  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9330  messages received
+                   0  signals received
+                  28  voluntary context switches
+               18982  involuntary context switches
+          6445958139  instructions retired
+          2576725484  cycles elapsed
+           181896128  peak memory footprint
+----------------------
+Run 21:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.85)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.93 real         0.47 user         0.22 sys
+           285196288  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21142  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9571  messages received
+                   0  signals received
+                  28  voluntary context switches
+               20054  involuntary context switches
+          6471973820  instructions retired
+          2566401200  cycles elapsed
+           181896128  peak memory footprint
+----------------------
+Run 22:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.75)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.89 real         0.52 user         0.25 sys
+           293404672  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21631  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9263  messages received
+                   0  signals received
+                  33  voluntary context switches
+               19326  involuntary context switches
+          6442814440  instructions retired
+          2582955052  cycles elapsed
+           183649240  peak memory footprint
+----------------------
+Run 23:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.8)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.76 real         0.45 user         0.20 sys
+           275185664  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21543  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8837  messages received
+                   0  signals received
+                  32  voluntary context switches
+               19252  involuntary context switches
+          6406551701  instructions retired
+          2451494531  cycles elapsed
+           182010816  peak memory footprint
+----------------------
+Run 24:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.75)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.72 real         0.45 user         0.20 sys
+           282230784  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20431  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8706  messages received
+                   0  signals received
+                  31  voluntary context switches
+               19192  involuntary context switches
+          6378502639  instructions retired
+          2466966261  cycles elapsed
+           181502936  peak memory footprint
+----------------------
+Run 25:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.16,0.71)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.90 real         0.51 user         0.24 sys
+           302645248  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22189  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9403  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19298  involuntary context switches
+          6457859141  instructions retired
+          2603804993  cycles elapsed
+           181208048  peak memory footprint
+----------------------
+Run 26:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.88)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.95 real         0.50 user         0.23 sys
+           289079296  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20863  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9724  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19572  involuntary context switches
+          6465516197  instructions retired
+          2553303416  cycles elapsed
+           181552112  peak memory footprint
+----------------------
+Run 27:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.74)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.85 real         0.52 user         0.25 sys
+           291749888  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21006  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9215  messages received
+                   0  signals received
+                  29  voluntary context switches
+               19239  involuntary context switches
+          6435788309  instructions retired
+          2565685260  cycles elapsed
+           182387672  peak memory footprint
+----------------------
+Run 28:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.16,0.77)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.71 real         0.44 user         0.20 sys
+           294338560  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23210  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8394  messages received
+                   0  signals received
+                  31  voluntary context switches
+               18542  involuntary context switches
+          6360280371  instructions retired
+          2436363153  cycles elapsed
+           178144096  peak memory footprint
+----------------------
+Run 29:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.73)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.83 real         0.49 user         0.23 sys
+           288309248  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21833  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9168  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19566  involuntary context switches
+          6442920555  instructions retired
+          2566654819  cycles elapsed
+           182862832  peak memory footprint
+----------------------
+Run 30:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.81)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.91 real         0.45 user         0.20 sys
+           276398080  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20073  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9284  messages received
+                   0  signals received
+                  31  voluntary context switches
+               22125  involuntary context switches
+          6476417158  instructions retired
+          2586140201  cycles elapsed
+           179094536  peak memory footprint
+----------------------
+Run 31:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.71)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.82 real         0.43 user         0.20 sys
+           276234240  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21094  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9057  messages received
+                   0  signals received
+                  29  voluntary context switches
+               21259  involuntary context switches
+          6457933147  instructions retired
+          2532376627  cycles elapsed
+           183059392  peak memory footprint
+----------------------
+Run 32:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.73)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.90 real         0.47 user         0.22 sys
+           284278784  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21010  page reclaims
+                  53  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9095  messages received
+                   0  signals received
+                  31  voluntary context switches
+               20811  involuntary context switches
+          6444946839  instructions retired
+          2654833850  cycles elapsed
+           180274088  peak memory footprint
+----------------------
+Run 33:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.74)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.80 real         0.44 user         0.20 sys
+           278052864  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21199  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8444  messages received
+                   0  signals received
+                  29  voluntary context switches
+               18785  involuntary context switches
+          6351252475  instructions retired
+          2450047667  cycles elapsed
+           178684888  peak memory footprint
+----------------------
+Run 34:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.82)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.16 real         0.59 user         0.28 sys
+           298352640  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22442  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+               10329  messages received
+                   0  signals received
+                  31  voluntary context switches
+               19113  involuntary context switches
+          6518219358  instructions retired
+          2686362573  cycles elapsed
+           183305176  peak memory footprint
+----------------------
+Run 35:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.73)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.81 real         0.45 user         0.20 sys
+           293011456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21084  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8765  messages received
+                   0  signals received
+                  30  voluntary context switches
+               18960  involuntary context switches
+          6377283715  instructions retired
+          2469732526  cycles elapsed
+           182682584  peak memory footprint
+----------------------
+Run 36:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.72)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.71 real         0.45 user         0.20 sys
+           299384832  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21470  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8405  messages received
+                   0  signals received
+                  32  voluntary context switches
+               18399  involuntary context switches
+          6331326901  instructions retired
+          2459254256  cycles elapsed
+           177308560  peak memory footprint
+----------------------
+Run 37:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.76)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.85 real         0.46 user         0.20 sys
+           281526272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20915  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8451  messages received
+                   0  signals received
+                  30  voluntary context switches
+               18396  involuntary context switches
+          6328793074  instructions retired
+          2450224932  cycles elapsed
+           181289968  peak memory footprint
+----------------------
+Run 38:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.89)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.30 real         0.65 user         0.32 sys
+           306282496  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21398  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+               10443  messages received
+                   0  signals received
+                  29  voluntary context switches
+               19273  involuntary context switches
+          6516093704  instructions retired
+          2756453719  cycles elapsed
+           181961664  peak memory footprint
+----------------------
+Run 39:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.72)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.89 real         0.51 user         0.24 sys
+           299565056  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21488  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9363  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19345  involuntary context switches
+          6433633679  instructions retired
+          2583674390  cycles elapsed
+           180831096  peak memory footprint
+----------------------
+Run 40:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.76)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.91 real         0.50 user         0.22 sys
+           282148864  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21459  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9399  messages received
+                   0  signals received
+                  29  voluntary context switches
+               19470  involuntary context switches
+          6447823487  instructions retired
+          2550898190  cycles elapsed
+           183206896  peak memory footprint
+----------------------
+Run 41:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.76)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.91 real         0.50 user         0.23 sys
+           296091648  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21270  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9615  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19223  involuntary context switches
+          6459139624  instructions retired
+          2577522414  cycles elapsed
+           181339168  peak memory footprint
+----------------------
+Run 42:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.75)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.70 real         0.45 user         0.19 sys
+           280002560  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21096  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8358  messages received
+                   0  signals received
+                  29  voluntary context switches
+               18681  involuntary context switches
+          6337559841  instructions retired
+          2455917024  cycles elapsed
+           180913136  peak memory footprint
+----------------------
+Run 43:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.88)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.91 real         0.47 user         0.21 sys
+           283983872  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21570  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9326  messages received
+                   0  signals received
+                  29  voluntary context switches
+               19851  involuntary context switches
+          6456526911  instructions retired
+          2560780520  cycles elapsed
+           182469568  peak memory footprint
+----------------------
+Run 44:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.75)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.69 real         0.46 user         0.20 sys
+           284491776  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21083  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8550  messages received
+                   0  signals received
+                  28  voluntary context switches
+               18865  involuntary context switches
+          6364135120  instructions retired
+          2448916840  cycles elapsed
+           182584280  peak memory footprint
+----------------------
+Run 45:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.77)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.03 real         0.51 user         0.23 sys
+           277053440  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21656  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9420  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19971  involuntary context switches
+          6469923637  instructions retired
+          2607045343  cycles elapsed
+           182207448  peak memory footprint
+----------------------
+Run 46:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.19,0.77)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.04 real         0.54 user         0.26 sys
+           300498944  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22052  page reclaims
+                  24  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9619  messages received
+                   0  signals received
+                  32  voluntary context switches
+               19507  involuntary context switches
+          6483725947  instructions retired
+          2646317662  cycles elapsed
+           183354352  peak memory footprint
+----------------------
+Run 47:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.73)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.91 real         0.44 user         0.21 sys
+           289619968  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22936  page reclaims
+                   7  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9098  messages received
+                   0  signals received
+                  28  voluntary context switches
+               20399  involuntary context switches
+          6464802172  instructions retired
+          2527438056  cycles elapsed
+           178488184  peak memory footprint
+----------------------
+Run 48:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.16,0.83)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.64 real         0.64 user         0.30 sys
+           288358400  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21091  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+               10325  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19668  involuntary context switches
+          6533875763  instructions retired
+          2742679718  cycles elapsed
+           182010864  peak memory footprint
+----------------------
+Run 49:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.79)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.03 real         0.53 user         0.24 sys
+           288391168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20799  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9515  messages received
+                   0  signals received
+                  30  voluntary context switches
+               19198  involuntary context switches
+          6451710684  instructions retired
+          2667927032  cycles elapsed
+           182010840  peak memory footprint
+----------------------
+Run 50:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.93)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.14 real         0.49 user         0.23 sys
+           278315008  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20705  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9743  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19663  involuntary context switches
+          6469923714  instructions retired
+          2554067518  cycles elapsed
+           181519296  peak memory footprint
+----------------------
+Run 51:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.79)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.98 real         0.53 user         0.25 sys
+           299204608  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20954  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9434  messages received
+                   0  signals received
+                  30  voluntary context switches
+               19598  involuntary context switches
+          6458642656  instructions retired
+          2632410722  cycles elapsed
+           180864008  peak memory footprint
+----------------------
+Run 52:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.9)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.03 real         0.52 user         0.24 sys
+           305545216  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21348  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+               10011  messages received
+                   0  signals received
+                  32  voluntary context switches
+               20309  involuntary context switches
+          6516681063  instructions retired
+          2677081609  cycles elapsed
+           182256504  peak memory footprint
+----------------------
+Run 53:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.73)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.65 real         0.44 user         0.20 sys
+           281788416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21696  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8714  messages received
+                   0  signals received
+                  30  voluntary context switches
+               19358  involuntary context switches
+          6395861173  instructions retired
+          2536297604  cycles elapsed
+           179356632  peak memory footprint
+----------------------
+Run 54:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.77)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.70 real         0.44 user         0.19 sys
+           279379968  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20492  page reclaims
+                  38  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8517  messages received
+                   0  signals received
+                  33  voluntary context switches
+               19819  involuntary context switches
+          6509910529  instructions retired
+          2538309084  cycles elapsed
+           180552688  peak memory footprint
+----------------------
+Run 55:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.76)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.88 real         0.52 user         0.24 sys
+           302923776  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21183  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9428  messages received
+                   0  signals received
+                  28  voluntary context switches
+               19860  involuntary context switches
+          6469706736  instructions retired
+          2645948049  cycles elapsed
+           179045312  peak memory footprint
+----------------------
+Run 56:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.75)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.75 real         0.45 user         0.20 sys
+           274579456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20982  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8682  messages received
+                   0  signals received
+                  29  voluntary context switches
+               18979  involuntary context switches
+          6385949792  instructions retired
+          2462464271  cycles elapsed
+           180421592  peak memory footprint
+----------------------
+Run 57:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.75)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.73 real         0.44 user         0.20 sys
+           275791872  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21575  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8523  messages received
+                   0  signals received
+                  30  voluntary context switches
+               18967  involuntary context switches
+          6373447223  instructions retired
+          2470258537  cycles elapsed
+           184648688  peak memory footprint
+----------------------
+Run 58:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.15,0.9)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        3.02 real         0.53 user         0.25 sys
+           285704192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21177  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9670  messages received
+                   0  signals received
+                  28  voluntary context switches
+               20348  involuntary context switches
+          6495355453  instructions retired
+          2688532067  cycles elapsed
+           181732288  peak memory footprint
+----------------------
+Run 59:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.17,0.74)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.73 real         0.45 user         0.20 sys
+           281477120  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20893  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                8382  messages received
+                   0  signals received
+                  33  voluntary context switches
+               18709  involuntary context switches
+          6342303515  instructions retired
+          2445268602  cycles elapsed
+           179831768  peak memory footprint
+----------------------
+Run 60:
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reductionist.jasmin.ac.uk'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+S3 Test file path: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc
+Target Variable: m01s30i111
+Dataset loaded from S3 with s3fs and Pyfive: bnl/da193a_25_6hr_t_pt_cordex__198807-198807.nc (0.14,0.86)
+Loaded dataset <HDF5 dataset "m01s30i111": shape (120, 85, 324, 432), type "float32">
+Result is [[[[208.739013671875]]]]
+        2.94 real         0.50 user         0.23 sys
+           283852800  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21038  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  63  messages sent
+                9776  messages received
+                   0  signals received
+                  30  voluntary context switches
+               20170  involuntary context switches
+          6494593430  instructions retired
+          2616086682  cycles elapsed
+           182436872  peak memory footprint
+----------------------
