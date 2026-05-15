@@ -1,5 +1,9 @@
 FILES TO TEST
 
+--------------------------
+S3 BNL Bucket
+--------------------------
+
 TARGET_FILE="ch330a.pc19790301-bnl.nc"
 TARGET_VAR="UM_m01s16i202_vn1106"
 TARGET_VAR="UM_m01s30i202_vn1106"
@@ -11,12 +15,38 @@ TARGET_VAR="UM_m01s30i202_vn1106"
 TARGET_FILE="cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc"
 TARGET_VAR="cl"
 
+
 TARGET_FILE="da193a_25_day__198808-198808.nc"
 TARGET_VAR="m01s06i247_4"
+
 
 TARGET_FILE="da193a_25_6hr_t_pt_cordex__198807-198807.nc"
 TARGET_VAR="m01s30i111"
 
-
+--------------------------
+CEDA ESGF HTTPS - NGINX
+--------------------------
 TARGET_FILE="https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_201501-204912.nc" 
-TARGET_VAR="cl" 
+TARGET_VAR="cl"  #Shape: (420, 85, 144, 192)
+
+https_url = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/HighResMIP/MPI-M/MPI-ESM1-2-HR/control-1950/r1i1p1f1/Amon/hur/gn/v20180524/hur_Amon_MPI-ESM1-2-HR_control-1950_r1i1p1f1_gn_195001-195012.nc"
+
+
+--------------------------
+CEDA GWS HTTPS -  APACHE
+--------------------------
+https_url = "https://gws-access.jasmin.ac.uk/public/canari/varsiha/tas_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"	
+TARGET_VAR="tas" #Shape: (372, 96, 192)
+
+https_url = "https://gws-access.jasmin.ac.uk/public/canari/varsiha/clw_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"
+TARGET_VAR="clw" #Shape: (372, 47, 96, 192)
+
+
+--------------------------
+DKRZ ESGF HTTPS - NGINX
+--------------------------
+https_url = "http://esgf3.dkrz.de/thredds/fileServer/cmip6/RFMIP/MPI-M/MPI-ESM1-2-LR/piClim-spAer-anthro/r1i1p1f2/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"
+TARGET_VAR="tas" #Shape: (372, 96, 192)
+
+uri = "http://esgf3.dkrz.de/thredds/fileServer/cmip6/RFMIP/MPI-M/MPI-ESM1-2-LR/piClim-spAer-anthro/r1i1p1f2/Amon/clw/gn/v20190710/clw_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"
+ds = file["clw"] #Shape: (372, 47, 96, 192)
