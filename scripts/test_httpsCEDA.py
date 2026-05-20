@@ -1,35 +1,33 @@
 import concurrent.futures
 import numpy as np
 import fsspec
-import aiohttp
 import pyfive
-import time
+from fsspec.utils import get_protocol
 
-def load_from_https(uri, storage_options=None):
+def load_from_https(uri):
+    """
+    opening https file from uri using fsspec and pyfive
+    """
     
-    if storage_options is None:
-        client_kwargs = {'auth': None}
-        fs = fsspec.filesystem('http', **client_kwargs)
-        http_file = fs.open(uri, 'rb')
-
-    else:
-        username = storage_options.get("username", None)
-        password = storage_options.get("password", None)
-        client_kwargs = {
-            'auth': aiohttp.BasicAuth(username, password) if username and password else None
-        }
-        fs = fsspec.filesystem('http', **client_kwargs)
-        http_file = fs.open(uri, 'rb', cache_type='blockcache', block_size=1024*1024)
+    client_kwargs = {'auth': None}
+    fs = fsspec.filesystem('http', **client_kwargs)
+    http_file = fs.open(uri, 'rb')
 
     ds = pyfive.File(http_file)
     print(f"Dataset loaded from https with Pyfive: {uri}")
     return ds
 
 def _iterate_range(i):
+    """
+    to iterate over various slices of the dataset
+    """
     return ds[0:i]   # np.min(ds[0:i])
 
 
+# ------------------------------------------
 # --- Configuration which server testing ---
+# ------------------------------------------
+
 current_test = 'CEDA' 
 
 # Define your environments
@@ -48,7 +46,6 @@ servers = {
     }
 }
 
-# --- Logic ---
 if current_test not in servers:
     raise ValueError(f"Unknown server: {current_test}. Choose from {list(servers.keys())}")
 
@@ -56,9 +53,26 @@ if current_test not in servers:
 config = servers[current_test]
 print(f"--- Running Test on {current_test} ---")
 
-file_obj = load_from_https(config['uri'], storage_options=None)
-ds = file_obj[config['var']]
 
+
+
+
+print(f"Protocol for CEDA: {get_protocol(config['uri'])}") # Output: https (or http)
+import os
+
+# The HTTPS server usually maps to a specific directory on JASMIN
+# Example: esgf.ceda.ac.uk/thredds/fileServer/ matches /badc/cmip6/data/
+local_path = config['uri'].replace("https://esgf.ceda.ac.uk/thredds/fileServer/", "/badc/")
+
+if os.path.exists(local_path):
+    print(f"SUCCESS: This file is locally mounted at {local_path}")
+    print("You should use POSIX (os.open) for much faster, stable access.")
+else:
+    print("FAILURE: File is not locally mounted. You must go through NGINX/HTTPS.")
+
+
+file_obj = load_from_https(config['uri'])
+ds = file_obj[config['var']]
 
 with concurrent.futures.ThreadPoolExecutor(
     max_workers=10) as executor:
