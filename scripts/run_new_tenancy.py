@@ -17,6 +17,7 @@ def test_s3_file(filename, variable, sample_slice):
 
     # Reductionist on Wacasoft (behind firewall)
     active_storage_url = "https://reductionist.jasmin.ac.uk/" 
+    #active_storage_url = "https://wacasoft1.jasmin.ac.uk/"
 
     # Construct the URI using the passed filename
     test_file_uri = os.path.join(S3_BUCKET,filename)
@@ -37,7 +38,7 @@ def test_s3_file(filename, variable, sample_slice):
     active._method = "min"
 
     result = active[sample_slice]
-    #result = active.min(axis=(0, 1))[sample_slice]
+    #result = active.mean(axis=(1,2))[sample_slice]
     print("Confirm slice is", sample_slice)   
     print("Result is", result)
     return result
@@ -49,15 +50,17 @@ def test_https_file():
     """
     active_storage_url = "https://reductionist.jasmin.ac.uk/"
     test_file_uri = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc"
-    active = Active(test_file_uri, ncvar="cl",  active_storage_url=active_storage_url)
-    active._version = 1
+    active = Active(test_file_uri, ncvar="cl",  active_storage_url=active_storage_url, option_disable_chunk_cache=True)
+    active._version = 2
     active._method = "min"
+    active._max_threads = 100
   
-    result = active[0:40, 0:1920, 0:30, 0:30][0] 
-
+    #result = active[0:40, 0:1920, 0:30, 0:30][0]
+    #dataset cl: 600, 85, 144, 192
+    result = active[0:40,:,:,:]#0:600,0:85,0:144,0:192]
     print(result)
 
-    return result  
+    return result
 
 
 if __name__ == "__main__":
@@ -67,7 +70,7 @@ if __name__ == "__main__":
     #----------------------------------------------------
 
     # Check if we got the right number of arguments
-    
+    """
     if len(sys.argv) < 4:
         print("Usage: python script.py <file> <var> <slices_string>")
         sys.exit(1)
@@ -82,9 +85,9 @@ if __name__ == "__main__":
                           for i in range(0, len(slice_data), 2))
 
     final_result = test_s3_file(target_file, target_var, active_slices)
-    
+    """
     #----------------------------------------------------
     #  https access- don't bother with the runTesting.sh, just do it manually
     #----------------------------------------------------  
 
-    #test_https_file()
+    test_https_file()
