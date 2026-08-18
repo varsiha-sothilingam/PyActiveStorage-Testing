@@ -9,22 +9,23 @@ def test_s3_file(filename, variable, sample_slice):
     """
     Run the test with parameterized file, variable, and slicing via s3
     """
+    print("Check 1 ")
     storage_options = {
         'key': "f2d55c6dcfc7618b2c34e00b58df3cef",
         'secret': "$/'#M{0{/4rVhp%n^(XeX$q@y#&(NM3W1->~N.Q6VP.5[@bLpi='nt]AfH)>78pT",
         'client_kwargs': {'endpoint_url': "https://uor-aces-o.s3-ext.jc.rl.ac.uk"},  # final proxy
     }
-
+    print("Check 2 ")
     # Reductionist on Wacasoft (behind firewall)
     active_storage_url = "https://reductionist.jasmin.ac.uk/" 
     #active_storage_url = "https://wacasoft1.jasmin.ac.uk/"
 
     # Construct the URI using the passed filename
     test_file_uri = os.path.join(S3_BUCKET,filename)
-    
+    print("Check 3 ")
     print(f"S3 Test file path: {test_file_uri}")
     print(f"Target Variable: {variable}")
-
+    print("Check 4 ")
     active = Active(
         test_file_uri, 
         variable, 
@@ -33,9 +34,10 @@ def test_s3_file(filename, variable, sample_slice):
         active_storage_url=active_storage_url,
         option_disable_chunk_cache=False
     )
-
+    print("Check 5 ")
     active._version = 2
     active._method = "min"
+    active._max_threads = 100
 
     result = active[sample_slice]
     #result = active.mean(axis=(1,2))[sample_slice]
@@ -70,7 +72,7 @@ if __name__ == "__main__":
     #----------------------------------------------------
 
     # Check if we got the right number of arguments
-    """
+    
     if len(sys.argv) < 4:
         print("Usage: python script.py <file> <var> <slices_string>")
         sys.exit(1)
@@ -85,9 +87,9 @@ if __name__ == "__main__":
                           for i in range(0, len(slice_data), 2))
 
     final_result = test_s3_file(target_file, target_var, active_slices)
-    """
+    
     #----------------------------------------------------
     #  https access- don't bother with the runTesting.sh, just do it manually
     #----------------------------------------------------  
 
-    test_https_file()
+    #test_https_file()
