@@ -1,0 +1,16 @@
+=== [Python 3.14] START ===
+Log file: logs/python-3.14.log
+--- Python version ---
+Python 3.14.4
+--- Running pytest ---
+============================= test session starts ==============================
+platform darwin -- Python 3.14.4, pytest-9.0.3, pluggy-1.6.0
+rootdir: /Users/dh935740@reading.ac.uk/PyActiveStorage
+configfile: pyproject.toml
+plugins: cov-7.1.0, xdist-3.8.0, metadata-3.1.1, html-4.2.0
+created: 2/2 workers
+2 workers [112 items]
+
+Fx......................................FFxxxx.ssxxFFF....sFFFx......... [ 64%]
+......FFFFFF...........FFFFFFF..s.../run_tests.sh: line 15: 99333 Killed: 9               pytest -n 2 -m "not slow" /Users/dh935740@reading.ac.uk/PyActiveStorage/tests/ --ignore=/Users/dh935740@reading.ac.uk/PyActiveStorage/tests/test_real_https.py --ignore=/Users/dh935740@reading.ac.uk/PyActiveStorage/tests/test_real_s3.py
+=== [Python 3.14] EXIT CODE: 137 ===

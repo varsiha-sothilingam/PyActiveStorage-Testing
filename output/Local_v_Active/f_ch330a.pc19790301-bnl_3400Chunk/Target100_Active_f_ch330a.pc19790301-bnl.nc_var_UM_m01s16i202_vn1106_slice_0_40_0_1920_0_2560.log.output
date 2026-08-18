@@ -1,0 +1,138 @@
+Run 1:
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.6,2.4e+01)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+HTTPSConnectionPool(host='wacasoft1.jasmin.ac.uk', port=443): Max retries exceeded with url: /v2/min/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='wacasoft1.jasmin.ac.uk', port=443) at 0x15e1a56a0>, 'Connection to wacasoft1.jasmin.ac.uk timed out. (connect timeout=None)'))
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+TimeoutError: [Errno 60] Operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise ConnectTimeoutError(
+    ...<2 lines>...
+    ) from e
+urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='wacasoft1.jasmin.ac.uk', port=443) at 0x15e1a56a0>, 'Connection to wacasoft1.jasmin.ac.uk timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='wacasoft1.jasmin.ac.uk', port=443): Max retries exceeded with url: /v2/min/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='wacasoft1.jasmin.ac.uk', port=443) at 0x15e1a56a0>, 'Connection to wacasoft1.jasmin.ac.uk timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 577, in _from_storage
+    result, count, out_selection = future.result()
+                                   ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 722, in _process_chunk
+    tmp, count = reductionist.reduce_chunk(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<12 lines>...
+        operation=self._method,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        option_disable_chunk_cache=chunk_caching,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 94, in reduce_chunk
+    response = request(session, url, request_data)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 223, in request
+    response = session.post(
+        url,
+        json=request_data,
+    )
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/requests/adapters.py", line 665, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='wacasoft1.jasmin.ac.uk', port=443): Max retries exceeded with url: /v2/min/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='wacasoft1.jasmin.ac.uk', port=443) at 0x15e1a56a0>, 'Connection to wacasoft1.jasmin.ac.uk timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 85, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 40, in test_s3_file
+    result = active[sample_slice]
+             ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 342, in __getitem__
+    return self._get_selection(index)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 473, in _get_selection
+    return self._from_storage(ds, indexer, array._chunks, out_shape, dtype,
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              compressor, filters, drop_axes, self._axis)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 557, in _from_storage
+    with concurrent.futures.ThreadPoolExecutor(
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+            max_workers=self._max_threads) as executor:
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 667, in __exit__
+    self.shutdown(wait=True)
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 273, in shutdown
+    t.join()
+    ~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/threading.py", line 1133, in join
+    self._os_thread_handle.join(timeout)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyboardInterrupt

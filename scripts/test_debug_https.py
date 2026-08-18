@@ -158,7 +158,9 @@ def test_https():
 
 def test_https_stresstest():
     test_file_uri = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/CMIP/MOHC/UKESM1-1-LL/piControl/r1i1p1f2/Amon/ta/gn/latest/ta_Amon_UKESM1-1-LL_piControl_r1i1p1f2_gn_274301-274912.nc"
-    myVar = "ta"
+
+    test_file_uri = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_201501-204912.nc"
+    myVar = "cl"
     active_storage_url = "https://reductionist.jasmin.ac.uk/" 
 
     f_1 = 176.882080078125
@@ -168,13 +170,14 @@ def test_https_stresstest():
                     interface_type="https",
                     active_storage_url=active_storage_url,
                     option_disable_chunk_cache=True)
-    active._version = 2
+    active._version = 1
+    active._max_threads = 100
 
     # --- STEP 1: Find the Reductionist Limit (Stress Test) ---
     print("Finding server-side limit...")
     safe_limit = 5  # Default fallback
     #(84, 19, 144, 192)
-    for size in range(1, 84, 1):  # Test 10, 20, 30...
+    for size in range(1, 420, 20):  # Test 10, 20, 30...
         try:
             start = time.time()
             # Probe: Just fetch a slice to see if the server chokes
@@ -190,12 +193,12 @@ def test_https_stresstest():
 
     # --- STEP 2: Use the discovered limit to process the whole file ---
     all_mins = []
-    total_steps =  84 #in this case
+    total_steps =  21 #in this case
 
     for i in range(0, total_steps, safe_limit):
         # Ensure we don't go out of bounds on the final slice
         end = min(i + safe_limit, total_steps)
-        chunk_min = active[i:end, :, :, :].min()[:]
+        chunk_min = active[i:end, :, :, :].min()
         #chunk_min = active[i:end, :, :, :].min(axis=(0, 1))[:]
         all_mins.append(chunk_min)
 
@@ -224,8 +227,8 @@ def test_response_https():
     print("https Response")
     print("----------------------------------------------------------------------")
 
-    #test_file_uri = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc"
-    #myVar = "cl"
+    test_file_uri = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/v20200420/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc"
+    myVar = "cl"
 
     #test_file_uri = "http://esgf3.dkrz.de/thredds/fileServer/cmip6/RFMIP/MPI-M/MPI-ESM1-2-LR/piClim-spAer-anthro/r1i1p1f2/Amon/clw/gn/v20190710/clw_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"
     #test_file_uri = "https://gws-access.jasmin.ac.uk/public/
@@ -233,13 +236,14 @@ def test_response_https():
 
 
     #MY TEST FILE
-    test_file_uri = "https://gws-access.jasmin.ac.uk/public/canari/varsiha/clw_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"
+    #test_file_uri = "https://gws-access.jasmin.ac.uk/public/canari/varsiha/clw_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"
     #test_file_uri = "https://gws-access.jasmin.ac.uk/public/canari/varsiha/tas_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"	
     
     #test_file_uri = "http://esgf3.dkrz.de/thredds/fileServer/cmip6/RFMIP/MPI-M/MPI-ESM1-2-LR/piClim-spAer-anthro/r1i1p1f2/Amon/tas/gn/v20190710/tas_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"
 
-    myVar="clw"
+    #myVar="clw"
     active_storage_url = "https://reductionist.jasmin.ac.uk/"  # Wacasoft new Reductionist
+    #active_storage_url = "https://wacasoft2.jasmin.ac.uk/"  
 
     # set these as fixed floats
     f_1 = 176.882080078125
@@ -249,20 +253,20 @@ def test_response_https():
     active = Active(test_file_uri, myVar,
                     interface_type="https",
                     active_storage_url=active_storage_url,
-                    option_disable_chunk_cache=True)
+                    option_disable_chunk_cache=False)
 
     active._version = 2
-    #result = active.min(axis=(0, 1))[:]
+    result = active.min(axis=(0, 1))[:]
     
     #(372, 96, 192)
-    all_mins = []
-    for i in range(0, 372, 100): 
-        chunk_min = active[i : i+100, :, :, :].min(axis=(0, 1))[:]
-        all_mins.append(chunk_min)
+    #all_mins = []
+    #for i in range(0, 372, 100): 
+    #    chunk_min = active[i : i+100, :, :, :].min(axis=(0, 1))[:]
+    #    all_mins.append(chunk_min)
 
     #print(all_mins)
 
-    result = np.min(all_mins, axis=0)
+    #result = np.min(all_mins, axis=0)
 
     #result = active.min()[0:20, 0:19, 0:144, 0:192]
 
@@ -327,9 +331,9 @@ def test_response_s3():
 def main():
     print("run main")
     #test_https()
-    #test_https_stresstest()
+    test_https_stresstest()
     #test_response_s3()
-    test_response_https()
+    #test_response_https()
 
 if __name__ == "__main__":
     main()

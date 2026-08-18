@@ -7,7 +7,7 @@ import pyfive
 # =============================================================================
 
 ACCESS_METHOD = "https"      # "https" or "s3"
-DATASET_NAME = "clw"         # Variable of interest, print again at bottom of script
+DATASET_NAME = "cl"         # Variable of interest, print again at bottom of script
 
 # -----------------------------------------------------------------------------
 # S3 configuration
@@ -22,8 +22,71 @@ S3_URL = f"{S3_BUCKET}/{S3_FILE}"
 # HTTPS configuration
 # -----------------------------------------------------------------------------
 
-HTTPS_URL = "http://esgf3.dkrz.de/thredds/fileServer/cmip6/RFMIP/MPI-M/MPI-ESM1-2-LR/piClim-spAer-anthro/r1i1p1f2/Amon/clw/gn/v20190710/clw_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"
+#HTTPS_URL  = "https://gws-access.jasmin.ac.uk/public/canari/varsiha/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc"
+#HTTPS_URL  = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/AerChemMIP/MOHC/UKESM1-0-LL/ssp370SST-lowNTCF/r1i1p1f2/Amon/cl/gn/latest/cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc"
+#HTTPS_FILE = "cl_Amon_UKESM1-0-LL_ssp370SST-lowNTCF_r1i1p1f2_gn_205001-209912.nc"
+
+#HTTPS_URL  = "http://esgf-node.ornl.gov/thredds/fileServer/css03_data/CMIP6/CMIP/CCCma/CanESM5/historical/r1i1p1f1/Amon/tas/gn/v20190429/tas_Amon_CanESM5_historical_r1i1p1f1_gn_185001-201412.nc"
+#HTTPS_FILE = "tas_Amon_CanESM5_historical_r1i1p1f1_gn_185001-201412.nc"
+
+#HTTPS_URL = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/CMIP/MOHC/UKESM1-0-LL/esm-hist/r1i1p1f2/Amon/cl/gn/v20190723/cl_Amon_UKESM1-0-LL_esm-hist_r1i1p1f2_gn_185001-189912.nc"
+#HTTPS_FILE = "cl_Amon_UKESM1-0-LL_esm-hist_r1i1p1f2_gn_185001-189912.nc"
+
+
+HTTPS_URL = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/CMIP/MOHC/UKESM1-0-LL/1pctCO2/r1i1p1f2/Amon/clw/gn/v20190406/clw_Amon_UKESM1-0-LL_1pctCO2_r1i1p1f2_gn_195001-199912.nc"
+HTTPS_FILE = "clw_Amon_UKESM1-0-LL_1pctCO2_r1i1p1f2_gn_195001-199912.nc"
+
+HTTPS_URL = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/CMIP/MOHC/HadGEM3-GC31-LL/piControl/r1i1p1f1/Amon/clw/gn/v20211103/clw_Amon_HadGEM3-GC31-LL_piControl_r1i1p1f1_gn_185001-189912.nc"
+HTTPS_FILE = "clw_Amon_HadGEM3-GC31-LL_piControl_r1i1p1f1_gn_185001-189912.nc"
+
+
+HTTPS_URL = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/CMIP/MOHC/HadGEM3-GC31-LL/piControl/r1i1p1f1/Amon/hur/gn/v20211103/hur_Amon_HadGEM3-GC31-LL_piControl_r1i1p1f1_gn_215001-224912.nc"
+HTTPS_FILE = "hur_Amon_HadGEM3-GC31-LL_piControl_r1i1p1f1_gn_215001-224912.nc"
+
+
+HTTPS_URL = "http://esgf3.dkrz.de/thredds/dodsC/cmip6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r14i1p1f1/CFmon/hur/gn/v20210901/hur_CFmon_MPI-ESM1-2-LR_ssp245_r14i1p1f1_gn_201501-203412.nc"
+HTTPS_FILE = "hur_CFmon_MPI-ESM1-2-LR_ssp245_r14i1p1f1_gn_201501-203412.nc"
+
+#test
+#HTTPS_URL = "http://esgf3.dkrz.de/thredds/fileServer/cmip6/CMIP/MOHC/UKESM1-0-LL/esm-hist/r1i1p1f2/Amon/cl/gn/v20190723/cl_Amon_UKESM1-0-LL_esm-hist_r1i1p1f2_gn_185001-189912.nc"
+
+HTTPS_URL = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/CMIP/MOHC/UKESM1-0-LL/1pctCO2/r1i1p1f2/Amon/clw/gn/v20190406/clw_Amon_UKESM1-0-LL_1pctCO2_r1i1p1f2_gn_195001-199912.nc"
+HTTPS_FILE = "clw_Amon_UKESM1-0-LL_1pctCO2_r1i1p1f2_gn_195001-199912.nc"
+
+#HTTPS_URL =  "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/CMIP/MOHC/UKESM1-0-LL/1pctCO2/r1i1p1f2/Amon/clw/gn/v20190406/clw_Amon_UKESM1-0-LL_1pctCO2_r1i1p1f2_gn_185001-189912.nc"
+#HTTPS_FILE = "clw_Amon_UKESM1-0-LL_1pctCO2_r1i1p1f2_gn_185001-189912.nc"
+
+HTTPS_URL =   "http://esgf3.dkrz.de/thredds/fileServer/cmip6/RFMIP/MPI-M/MPI-ESM1-2-LR/piClim-spAer-anthro/r1i1p1f2/Amon/clw/gn/v20190710/clw_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"
 HTTPS_FILE = "clw_Amon_MPI-ESM1-2-LR_piClim-spAer-anthro_r1i1p1f2_gn_184901-187912.nc"
+
+
+"""
+cl
+  shape  : (600, 85, 144, 192)
+  dtype  : float32
+  chunk size : (1, 43, 72, 96)
+  chunk grid   : [600, 2, 2, 2]
+  total chunks : 4800
+  chunk size   : 1,188,864 bytes (1.13 MB)
+"""
+
+#HTTPS_URL = "https://esgf.ceda.ac.uk/thredds/fileServer/esg_cmip6/CMIP6/CMIP/MOHC/UKESM1-0-LL/esm-hist/r1i1p1f2/Amon/cl/gn/v20190723/cl_Amon_UKESM1-0-LL_esm-hist_r1i1p1f2_gn_185001-189912.nc"
+
+"""
+cl
+  shape  : (600, 85, 144, 192)
+  dtype  : float32
+  chunk size : (1, 43, 72, 96)
+  chunk grid   : [600, 2, 2, 2]
+  total chunks : 4800
+  chunk size   : 1,188,864 bytes (1.13 MB)
+"""
+
+#HTTPS_URL = "https://gws-access.jasmin.ac.uk/public/canari/varsiha/cl_Amon_UKESM1-0-LL_esm-hist_r1i1p1f2_gn_185001-189912.nc"
+
+#HTTPS_FILE = "cl_Amon_UKESM1-0-LL_esm-hist_r1i1p1f2_gn_185001-189912.nc"
+
+
 
 # =============================================================================
 # Create filesystem
@@ -76,6 +139,8 @@ with fs.open(filepath, "rb") as f:
 
         print("\nVariables in file:")
         print("-" * 80)
+        for name in h5.keys():
+            print(name)
 
         for name in h5.keys():
 
@@ -94,7 +159,7 @@ with fs.open(filepath, "rb") as f:
                 print("  chunks : contiguous")
                 continue
 
-            print(f"  chunks : {obj.chunks}")
+            print(f"  chunk size : {obj.chunks}")
 
             chunks_per_axis = [
                 int(np.ceil(s / c))

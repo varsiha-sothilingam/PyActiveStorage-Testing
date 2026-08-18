@@ -1,0 +1,273 @@
+Run 1:
+Check 1 
+Check 2 
+Check 3 
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Check 4 
+Check 5 
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.82,5.7)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Reductionist error: HTTP 503: Service Unavailable
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 89, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 42, in test_s3_file
+    result = active[sample_slice]
+             ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 342, in __getitem__
+    return self._get_selection(index)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 473, in _get_selection
+    return self._from_storage(ds, indexer, array._chunks, out_shape, dtype,
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              compressor, filters, drop_axes, self._axis)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 577, in _from_storage
+    result, count, out_selection = future.result()
+                                   ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 722, in _process_chunk
+    tmp, count = reductionist.reduce_chunk(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<12 lines>...
+        operation=self._method,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        option_disable_chunk_cache=chunk_caching,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 99, in reduce_chunk
+    decode_and_raise_error(response)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 270, in decode_and_raise_error
+    raise ReductionistError(response.status_code, error)
+activestorage.reductionist.ReductionistError: Reductionist error: HTTP 503: Service Unavailable
+       29.47 real         7.28 user         1.91 sys
+           533463040  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               58299  page reclaims
+                 595  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               10415  messages sent
+               78081  messages received
+                   0  signals received
+                6481  voluntary context switches
+              169030  involuntary context switches
+         64022080412  instructions retired
+         24318157318  cycles elapsed
+           475384184  peak memory footprint
+----------------------
+Run 2:
+Check 1 
+Check 2 
+Check 3 
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Check 4 
+Check 5 
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.15,4.2)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Reductionist error: HTTP 503: Service Unavailable
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 89, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 42, in test_s3_file
+    result = active[sample_slice]
+             ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 342, in __getitem__
+    return self._get_selection(index)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 473, in _get_selection
+    return self._from_storage(ds, indexer, array._chunks, out_shape, dtype,
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              compressor, filters, drop_axes, self._axis)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 577, in _from_storage
+    result, count, out_selection = future.result()
+                                   ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 722, in _process_chunk
+    tmp, count = reductionist.reduce_chunk(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<12 lines>...
+        operation=self._method,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        option_disable_chunk_cache=chunk_caching,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 99, in reduce_chunk
+    decode_and_raise_error(response)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 270, in decode_and_raise_error
+    raise ReductionistError(response.status_code, error)
+activestorage.reductionist.ReductionistError: Reductionist error: HTTP 503: Service Unavailable
+       18.12 real         6.18 user         1.81 sys
+           560136192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               74646  page reclaims
+                  13  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               12263  messages sent
+               84171  messages received
+                   0  signals received
+                5552  voluntary context switches
+              210308  involuntary context switches
+         81326414515  instructions retired
+         29094307828  cycles elapsed
+           441174368  peak memory footprint
+----------------------
+Run 3:
+Check 1 
+Check 2 
+Check 3 
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Check 4 
+Check 5 
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-bnl.nc (0.14,3.7)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+Reductionist error: HTTP 503: Service Unavailable
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 89, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 42, in test_s3_file
+    result = active[sample_slice]
+             ~~~~~~^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 342, in __getitem__
+    return self._get_selection(index)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 473, in _get_selection
+    return self._from_storage(ds, indexer, array._chunks, out_shape, dtype,
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              compressor, filters, drop_axes, self._axis)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 577, in _from_storage
+    result, count, out_selection = future.result()
+                                   ~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/_base.py", line 395, in __get_result
+    raise self._exception
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 722, in _process_chunk
+    tmp, count = reductionist.reduce_chunk(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        session,
+        ^^^^^^^^
+    ...<12 lines>...
+        operation=self._method,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        option_disable_chunk_cache=chunk_caching,)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 99, in reduce_chunk
+    decode_and_raise_error(response)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/reductionist.py", line 270, in decode_and_raise_error
+    raise ReductionistError(response.status_code, error)
+activestorage.reductionist.ReductionistError: Reductionist error: HTTP 503: Service Unavailable
+       16.59 real        11.83 user         2.50 sys
+          1159036928  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              145912  page reclaims
+                  17  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               21399  messages sent
+              110038  messages received
+                   0  signals received
+               10340  voluntary context switches
+              277248  involuntary context switches
+        164193840775  instructions retired
+         52639182530  cycles elapsed
+          1331497888  peak memory footprint
+----------------------
+Run 4:
+Check 1 
+Check 2 
+Check 3 
+S3 Test file path: bnl/ch330a.pc19790301-bnl.nc
+Target Variable: UM_m01s16i202_vn1106
+Check 4 
+Check 5 
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 89, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 42, in test_s3_file
+    result = active[sample_slice]
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 324, in __getitem__
+    self.__load_nc_file()
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 306, in __load_nc_file
+    nc = load_from_s3(self.uri, self.storage_options)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 77, in load_from_s3
+    s3file = fs.open(uri, 'rb')
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/spec.py", line 1349, in open
+    f = self._open(
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/s3fs/core.py", line 807, in _open
+    return S3File(
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/s3fs/core.py", line 2369, in __init__
+    super().__init__(
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/spec.py", line 1923, in __init__
+    self.size = self.details["size"]
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/spec.py", line 1936, in details
+    self._details = self.fs.info(self.path)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/asyn.py", line 118, in wrapper
+    return sync(self.loop, func, *args, **kwargs)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/asyn.py", line 91, in sync
+    if event.wait(1):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/threading.py", line 670, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/threading.py", line 373, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+time: command terminated abnormally
+        0.58 real         0.21 user         0.08 sys
+            98320384  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8443  page reclaims
+                  13  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   2  signals received
+                 807  voluntary context switches
+                2092  involuntary context switches
+          3457103188  instructions retired
+          1287512054  cycles elapsed
+            71205656  peak memory footprint

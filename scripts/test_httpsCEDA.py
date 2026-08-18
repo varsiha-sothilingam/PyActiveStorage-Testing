@@ -4,6 +4,11 @@ import fsspec
 import pyfive
 from fsspec.utils import get_protocol
 
+# -------------------------------------------------------------
+# Minimum Viable Product test script used for the testing
+# of HTTPS server performance for get-range requests 
+# -------------------------------------------------------------
+
 def load_from_https(uri):
     """
     opening https file from uri using fsspec and pyfive
@@ -22,7 +27,6 @@ def _iterate_range(i):
     to iterate over various slices of the dataset
     """
     return ds[0:i]   # np.min(ds[0:i])
-
 
 # ------------------------------------------
 # --- Configuration which server testing ---
@@ -52,24 +56,6 @@ if current_test not in servers:
 # Extract settings
 config = servers[current_test]
 print(f"--- Running Test on {current_test} ---")
-
-
-
-
-
-print(f"Protocol for CEDA: {get_protocol(config['uri'])}") # Output: https (or http)
-import os
-
-# The HTTPS server usually maps to a specific directory on JASMIN
-# Example: esgf.ceda.ac.uk/thredds/fileServer/ matches /badc/cmip6/data/
-local_path = config['uri'].replace("https://esgf.ceda.ac.uk/thredds/fileServer/", "/badc/")
-
-if os.path.exists(local_path):
-    print(f"SUCCESS: This file is locally mounted at {local_path}")
-    print("You should use POSIX (os.open) for much faster, stable access.")
-else:
-    print("FAILURE: File is not locally mounted. You must go through NGINX/HTTPS.")
-
 
 file_obj = load_from_https(config['uri'])
 ds = file_obj[config['var']]

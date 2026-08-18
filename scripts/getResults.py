@@ -5,6 +5,14 @@ import sys
 import os
 from datetime import datetime
 
+#########################################################################################
+#
+#   This script takes the log files from running the run_new_tenancy.py and converts
+#   then into python numpy arrays and saves them as python files which can be used
+#   as input for various python plotting scripts
+#
+#########################################################################################
+
 def parse_log_to_data(input_path):
     """Parses the log file, converts Bytes to MB, and returns numpy arrays."""
     try:

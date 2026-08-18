@@ -1,0 +1,59 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+package "activestorage" {
+
+    class Active {
+        + uri : str
+        + ncvar : str
+        + storage_options : dict
+        + missing : tuple
+        + __init__(uri, ncvar, ...)
+        + __getitem__(index)
+        + mean(axis)
+        + min(axis)
+        + max(axis)
+        - _from_storage()
+        - _get_missing_attributes()
+        - _mask_data(data)
+    }
+
+    class reductionist << (M,orchid) module >> {
+        + get_session(username, password, cacert)
+        + reduce_chunk(session, server, url, ...)
+        + build_request_data(...)
+        + decode_result(response)
+    }
+
+    class storage << (M,orchid) module >> {
+        + reduce_chunk(rfile, offset, size, ...)
+        + reduce_opens3_chunk(fh, offset, size, ...)
+        + read_block(open_file, offset, size)
+    }
+
+    class hdf2numcodec << (M,orchid) module >> {
+        + decode_filters(filter_pipeline, itemsize, name)
+    }
+
+    class config << (M,orchid) module >> {
+        + USE_S3 : bool
+        + S3_URL : str
+        + S3_ACTIVE_STORAGE_URL : str
+    }
+    
+    class dummy_data << (M,orchid) module >> {
+        + make_ncdata(...)
+        + make_partially_missing_ncdata(...)
+    }
+
+}
+
+' Relationships
+Active ..> reductionist : calls for remote S3 operations
+Active ..> storage : calls for local/POSIX operations
+Active ..> hdf2numcodec : decodes HDF5 filters
+Active ..> config : reads settings
+reductionist ..> config : reads S3 credentials
+dummy_data ..> storage : used for creating test files
+
+@enduml

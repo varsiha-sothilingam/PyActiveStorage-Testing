@@ -1,0 +1,100 @@
+=== [Python 3.13] START ===
+Log file: logs/python-3.13.log
+--- Python version ---
+Python 3.13.13
+--- Running pytest ---
+============================= test session starts ==============================
+platform darwin -- Python 3.13.13, pytest-9.0.3, pluggy-1.6.0
+rootdir: /Users/dh935740@reading.ac.uk/PyActiveStorage
+configfile: pyproject.toml
+plugins: cov-7.1.0, xdist-3.8.0, metadata-3.1.1, html-4.2.0
+created: 2/2 workers
+2 workers [112 items]
+
+FFxxx......................................FxxxxFF.ssF...FFFx........... [ 64%]
+.sF.............FFFFFFF..s...s....FFFFFFINTERNALERROR> Traceback (most recent call last):
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/coverage/sqlitedb.py", line 122, in _execute
+INTERNALERROR>     return self.con.execute(sql, parameters)  # type: ignore[arg-type]
+INTERNALERROR>            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+INTERNALERROR> sqlite3.OperationalError: no such table: other_db.file
+INTERNALERROR> 
+INTERNALERROR> During handling of the above exception, another exception occurred:
+INTERNALERROR> 
+INTERNALERROR> Traceback (most recent call last):
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/coverage/sqlitedb.py", line 127, in _execute
+INTERNALERROR>     return self.con.execute(sql, parameters)  # type: ignore[arg-type]
+INTERNALERROR>            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+INTERNALERROR> sqlite3.OperationalError: no such table: other_db.file
+INTERNALERROR> 
+INTERNALERROR> The above exception was the direct cause of the following exception:
+INTERNALERROR> 
+INTERNALERROR> Traceback (most recent call last):
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/_pytest/main.py", line 318, in wrap_session
+INTERNALERROR>     session.exitstatus = doit(config, session) or 0
+INTERNALERROR>                          ~~~~^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/_pytest/main.py", line 372, in _main
+INTERNALERROR>     config.hook.pytest_runtestloop(session=session)
+INTERNALERROR>     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/pluggy/_hooks.py", line 512, in __call__
+INTERNALERROR>     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+INTERNALERROR>            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/pluggy/_manager.py", line 120, in _hookexec
+INTERNALERROR>     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+INTERNALERROR>            ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/pluggy/_callers.py", line 167, in _multicall
+INTERNALERROR>     raise exception
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/pluggy/_callers.py", line 139, in _multicall
+INTERNALERROR>     teardown.throw(exception)
+INTERNALERROR>     ~~~~~~~~~~~~~~^^^^^^^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/_pytest/logging.py", line 801, in pytest_runtestloop
+INTERNALERROR>     return (yield)  # Run all the tests.
+INTERNALERROR>             ^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/pluggy/_callers.py", line 139, in _multicall
+INTERNALERROR>     teardown.throw(exception)
+INTERNALERROR>     ~~~~~~~~~~~~~~^^^^^^^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/_pytest/terminal.py", line 707, in pytest_runtestloop
+INTERNALERROR>     result = yield
+INTERNALERROR>              ^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/pluggy/_callers.py", line 152, in _multicall
+INTERNALERROR>     teardown.send(result)
+INTERNALERROR>     ~~~~~~~~~~~~~^^^^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/pytest_cov/plugin.py", line 352, in pytest_runtestloop
+INTERNALERROR>     self.cov_controller.finish()
+INTERNALERROR>     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/pytest_cov/engine.py", line 44, in ensure_topdir_wrapper
+INTERNALERROR>     return meth(self, *args, **kwargs)
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/pytest_cov/engine.py", line 366, in finish
+INTERNALERROR>     self.cov.combine()
+INTERNALERROR>     ~~~~~~~~~~~~~~~~^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/coverage/control.py", line 907, in combine
+INTERNALERROR>     combine_parallel_data(
+INTERNALERROR>     ~~~~~~~~~~~~~~~~~~~~~^
+INTERNALERROR>         self._data,
+INTERNALERROR>         ^^^^^^^^^^^
+INTERNALERROR>     ...<4 lines>...
+INTERNALERROR>         message=self._message,
+INTERNALERROR>         ^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>     )
+INTERNALERROR>     ^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/coverage/data.py", line 214, in combine_parallel_data
+INTERNALERROR>     data.update(new_data, map_path=map_path)
+INTERNALERROR>     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/coverage/sqldata.py", line 737, in update
+INTERNALERROR>     con.execute_void("""
+INTERNALERROR>     ~~~~~~~~~~~~~~~~^^^^
+INTERNALERROR>         CREATE TEMP TABLE other_file_mapped AS
+INTERNALERROR>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>     ...<3 lines>...
+INTERNALERROR>         FROM other_db.file AS other_file
+INTERNALERROR>         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+INTERNALERROR>     """)
+INTERNALERROR>     ^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/coverage/sqlitedb.py", line 158, in execute_void
+INTERNALERROR>     self._execute(sql, parameters).close()
+INTERNALERROR>     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+INTERNALERROR>   File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage-3.13/lib/python3.13/site-packages/coverage/sqlitedb.py", line 132, in _execute
+INTERNALERROR>     raise DataError(f"Couldn't use data file {self.filename!r}: {msg}") from exc
+INTERNALERROR> coverage.exceptions.DataError: Couldn't use data file '/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/GHA-emulator/.coverage': no such table: other_db.file
+
+= 23 failed, 76 passed, 5 skipped, 8 xfailed, 6 warnings, 2 errors in 192.25s (0:03:12) =
+=== [Python 3.13] EXIT CODE: 3 ===

@@ -1,0 +1,293 @@
+Run 1:
+S3 Test file path: bnl/ch330a.pc19790301-def.nc
+Target Variable: UM_m01s16i202_vn1106
+Dataset loaded from S3 with s3fs and Pyfive: bnl/ch330a.pc19790301-def.nc (0.37,4.8)
+Loaded dataset <HDF5 dataset "UM_m01s16i202_vn1106": shape (40, 1920, 2560), type "float32">
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  3369
+getsize of count_as_byte POST BUFFER:  3400
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+getsize of count as list:  56
+getsize of count_as_byte:  5153
+getsize of count_as_byte POST BUFFER:  5176
+Confirm slice is (slice(0, 36, None), slice(0, 1753, None), slice(0, 2337, None))
+Result is [[[4786.0 4787.39453125 4788.9921875 4790.9140625 4793.34375 4796.3125
+   4799.37890625 4802.88671875 4806.1171875 4809.36328125 4812.58203125
+   4814.0234375 4813.7265625 4813.43359375 4813.14453125 4812.85546875
+   4812.5546875 4812.25 4811.953125 4811.6640625 4811.3828125
+   4811.109375 4810.82421875 4810.5390625 4810.2578125 4809.98828125
+   4809.7265625 4809.46484375 4809.20703125 4808.953125 4808.6953125
+   4808.43359375 4808.18359375 4807.921875 4807.65625 4807.37109375
+   4807.09765625 4806.828125 4806.53125 4806.25 4806.01953125
+   4805.8203125 4805.625 4805.40234375 4805.1640625 4804.90625
+   4804.6484375 4804.375 4804.09375 4803.8046875 4779.6484375
+   4778.7421875 4778.03125 4777.625 4777.078125 4775.984375 4775.671875
+   4774.6796875 4773.6328125 4772.5234375 4771.23046875 4769.890625
+   4768.32421875 4766.734375 4765.30078125 4764.04296875 4763.265625
+   4762.66796875 4761.44921875 4760.140625 4759.03515625 4757.87890625
+   4756.984375 4756.0859375 4755.44921875 4755.05078125 4754.8203125
+   4754.13671875 4753.21484375 4752.30078125 4751.43359375 4750.4140625
+   4749.39453125 4748.2265625 4746.93359375 4745.64453125 4744.5234375
+   4743.6640625 4742.953125 4742.4375 4741.859375 4741.234375
+   4740.49609375 4739.7109375 4738.97265625 4738.3515625 4737.7890625
+   4737.34375 4736.98828125 4736.6640625]]]
+        6.01 real         0.97 user         0.39 sys
+           326500352  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               25402  page reclaims
+                1250  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 665  messages sent
+               17891  messages received
+                   0  signals received
+                2274  voluntary context switches
+               41142  involuntary context switches
+         13956382316  instructions retired
+          5085715334  cycles elapsed
+           217367512  peak memory footprint
+----------------------
+Run 2:
+S3 Test file path: bnl/ch330a.pc19790301-def.nc
+Target Variable: UM_m01s16i202_vn1106
+Traceback (most recent call last):
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 85, in <module>
+    final_result = test_s3_file(target_file, target_var, active_slices)
+  File "/Users/dh935740@reading.ac.uk/testing_PyActiveStorage/tests_Varsiha/scripts/run_new_tenancy.py", line 41, in test_s3_file
+    result = active.min(axis=(0,1))[sample_slice]
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 323, in __getitem__
+    self.__load_nc_file()
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 305, in __load_nc_file
+    nc = load_from_s3(self.uri, self.storage_options)
+  File "/Users/dh935740@reading.ac.uk/PyActiveStorage/activestorage/active.py", line 79, in load_from_s3
+    ds = pyfive.File(s3file)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/high_level.py", line 299, in __init__
+    self._superblock = SuperBlock(self._fh, 0)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/misc_low_level.py", line 31, in __init__
+    version_hint = struct.unpack_from("<B", fh.read(9), 8)[0]
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/utilities.py", line 108, in read
+    self._ensure_buffer()
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/pyfive/utilities.py", line 84, in _ensure_buffer
+    data = self.fh.read(self.buffer_size)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/spec.py", line 2122, in read
+    out = self.cache._fetch(self.loc, self.loc + length)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/caching.py", line 279, in _fetch
+    self.cache = self.fetcher(start, end)  # new block replaces old
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/s3fs/core.py", line 2490, in _fetch_range
+    return _fetch_range(
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/s3fs/core.py", line 2659, in _fetch_range
+    return sync(fs.loop, _inner_fetch, fs, bucket, key, version_id, start, end, req_kw)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/site-packages/fsspec/asyn.py", line 91, in sync
+    if event.wait(1):
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/threading.py", line 670, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/dh935740@reading.ac.uk/miniconda3/envs/activestorage/lib/python3.14/threading.py", line 373, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+time: command terminated abnormally
+        1.06 real         0.26 user         0.09 sys
+           106512384  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8982  page reclaims
+                   2  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  15  messages sent
+                  17  messages received
+                   2  signals received
+                  23  voluntary context switches
+                2990  involuntary context switches
+          3685703397  instructions retired
+          1449766145  cycles elapsed
+            73483152  peak memory footprint
